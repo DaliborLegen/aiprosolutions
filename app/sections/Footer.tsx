@@ -49,11 +49,15 @@ export default function Footer() {
           <div>
             <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-4">Sledite nam</p>
             <div className="space-y-2.5">
-              {["LinkedIn", "GitHub", "Instagram"].map((s) => (
-                <a key={s} href="#" className="block text-sm text-secondary hover:text-primary transition-colors">
-                  {s}
-                </a>
-              ))}
+              <a href="https://www.linkedin.com/in/dalibor-legen-83b4ab2b8" target="_blank" rel="noopener noreferrer" className="block text-sm text-secondary hover:text-primary transition-colors">
+                LinkedIn
+              </a>
+              <a href="https://github.com/DaliborLegen" target="_blank" rel="noopener noreferrer" className="block text-sm text-secondary hover:text-primary transition-colors">
+                GitHub
+              </a>
+              <a href="https://www.instagram.com/aiprosolutions_slovenija" target="_blank" rel="noopener noreferrer" className="block text-sm text-secondary hover:text-primary transition-colors">
+                Instagram
+              </a>
             </div>
           </div>
         </div>
