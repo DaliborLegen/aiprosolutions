@@ -26,11 +26,11 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.3 }}
             className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-primary leading-[1.08] tracking-tight mb-6"
           >
-            AI, programska oprema
+            Optimizirajte poslovanje
             <br />
-            in avtomatizacija za
+            z močjo
             <br />
-            <span className="grad-text">moderna podjetja</span>
+            <span className="grad-text">umetne inteligence</span>
           </motion.h1>
 
           <motion.p
@@ -39,8 +39,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-lg text-secondary leading-relaxed mb-10 max-w-xl"
           >
-            Razvijamo napredne digitalne rešitve, ki vašemu podjetju omogočajo rast,
-            učinkovitost in konkurenčno prednost. Od strategije do izvedbe.
+            Pomagamo podjetjem avtomatizirati procese, zmanjšati stroške in pospešiti
+            rast z naprednimi AI rešitvami, prilagojenimi vašim potrebam.
           </motion.p>
 
           <motion.div
