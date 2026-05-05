@@ -9,6 +9,7 @@ const links = [
   { href: "#zakaj", label: "Zakaj mi" },
   { href: "#proces", label: "Proces" },
   { href: "#projekti", label: "Projekti" },
+  { href: "#faq", label: "FAQ" },
   { href: "#kontakt", label: "Kontakt" },
 ];
 

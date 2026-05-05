@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --bg: #06080f;
@@ -79,12 +78,12 @@
   --color-glow-cyan: var(--glow-cyan);
   --color-border: var(--border);
   --color-border-hover: var(--border-hover);
-  --font-sans: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
 html { background: var(--bg); scroll-behavior: smooth; }
-body { background: var(--bg); color: var(--text-primary); font-family: 'Inter', system-ui, sans-serif; }
+body { background: var(--bg); color: var(--text-primary); font-family: var(--font-inter), system-ui, sans-serif; }
 
 .grad-text {
   background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));

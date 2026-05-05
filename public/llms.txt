@@ -1,0 +1,36 @@
+# AI PRO SOLUTIONS
+
+> AI PRO SOLUTIONS d.o.o. je slovensko podjetje, specializirano za napredne AI rešitve, razvoj programske opreme in avtomatizacijo poslovnih procesov. Pomagamo podjetjem zmanjšati stroške, pospešiti rast in optimizirati poslovanje s pomočjo umetne inteligence.
+
+## O podjetju
+
+- Polno ime: AI PRO SOLUTIONS d.o.o.
+- Spletna stran: https://aiprosolutions.si
+- E-pošta: info@aiprosolutions.si
+- Sedež: Slovenija
+- Jezik komunikacije: slovenščina, angleščina
+
+## Storitve
+
+- AI rešitve (chatboti, AI agenti, analitika, integracija LLM-ov)
+- Razvoj programske opreme po meri
+- Razvoj spletnih strani in aplikacij (Next.js, React)
+- Avtomatizacija poslovnih procesov
+- IT svetovanje in digitalna transformacija
+- AI video & avdio produkcija
+
+## Produkti pod krovnim podjetjem
+
+- [Revivio](https://revivio.si) — AI obnova starih in poškodovanih fotografij
+- [ProfiPix](https://profipix.si) — AI izboljšava fotografij za nastanitvene objekte
+- [Formatory](https://formatory.si) — pretvorba datotek in skeniranje dokumentov
+- [AI Agent](https://ai-agent.si) — AI agencija za podjetja
+
+## Glavna stran
+
+- [aiprosolutions.si](https://aiprosolutions.si): krovna predstavitvena stran s storitvami, procesom dela, projekti in kontaktom
+- [Sitemap](https://aiprosolutions.si/sitemap.xml)
+
+## Kontakt
+
+Vprašanja, ponudbe in sodelovanja: info@aiprosolutions.si
