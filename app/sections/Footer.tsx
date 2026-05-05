@@ -1,70 +1,109 @@
-import Image from "next/image";
+const products = [
+  { label: "Revivio", href: "https://revivio.si", note: "AI obnova fotografij" },
+  { label: "ProfiPix", href: "https://profipix.si", note: "AI fotografije nastanitev" },
+  { label: "Formatory", href: "https://formatory.si", note: "Pretvorba datotek" },
+  { label: "AI Agent", href: "https://ai-agent.si", note: "AI agencija" },
+];
 
 const nav = [
   { label: "Storitve", href: "#storitve" },
-  { label: "Zakaj mi", href: "#zakaj" },
+  { label: "Studio", href: "#zakaj" },
   { label: "Proces", href: "#proces" },
-  { label: "Projekti", href: "#projekti" },
+  { label: "Delo", href: "#projekti" },
+  { label: "Vprašanja", href: "#faq" },
   { label: "Kontakt", href: "#kontakt" },
+];
+
+const social = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/dalibor-legen-83b4ab2b8" },
+  { label: "GitHub", href: "https://github.com/DaliborLegen" },
+  { label: "Instagram", href: "https://www.instagram.com/aiprosolutions_slovenija" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative z-10 border-t border-border">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <Image src="/logo.png" alt="AIPRO Solutions" width={28} height={28} className="rounded" />
-              <span className="text-sm font-bold text-primary">AIPRO Solutions</span>
-            </div>
-            <p className="text-xs text-secondary leading-relaxed">
-              AI, programska oprema in avtomatizacija za moderna podjetja.
+    <footer className="relative border-t border-ink bg-paper">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-16 lg:py-20">
+        <div className="grid grid-cols-12 gap-x-6 gap-y-12">
+          {/* Masthead */}
+          <div className="col-span-12 lg:col-span-5">
+            <p className="display text-[40px] lg:text-[56px] text-ink leading-none">
+              AI<span className="display-italic text-terracotta">·</span>PRO
+            </p>
+            <p className="serif text-[15px] text-ink-soft mt-4 max-w-[360px] leading-[1.55]">
+              Studio za umetno inteligenco, programsko opremo in poslovno avtomatizacijo. Krovno podjetje{" "}
+              <em className="italic text-ink">AI PRO Solutions d.o.o.</em>, Slovenija.
             </p>
           </div>
 
           {/* Navigation */}
-          <div>
-            <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-4">Navigacija</p>
-            <div className="space-y-2.5">
+          <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+            <p className="mono text-[10px] uppercase tracking-[0.2em] text-ink-mute mb-5">
+              Stran
+            </p>
+            <ul className="space-y-2">
               {nav.map((n) => (
-                <a key={n.href} href={n.href} className="block text-sm text-secondary hover:text-primary transition-colors">
-                  {n.label}
-                </a>
+                <li key={n.href}>
+                  <a href={n.href} className="serif text-[15px] text-ink-soft hover:text-ink link-ed inline-block">
+                    {n.label}
+                  </a>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
-          {/* Contact */}
-          <div>
-            <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-4">Kontakt</p>
-            <div className="space-y-2.5 text-sm text-secondary">
-              <p>info@aiprosolutions.si</p>
-              <p>Slovenija</p>
-            </div>
+          {/* Products */}
+          <div className="col-span-12 sm:col-span-6 lg:col-span-3">
+            <p className="mono text-[10px] uppercase tracking-[0.2em] text-ink-mute mb-5">
+              Produkti
+            </p>
+            <ul className="space-y-3">
+              {products.map((p) => (
+                <li key={p.href}>
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block"
+                  >
+                    <span className="serif text-[15px] text-ink group-hover:text-terracotta transition-colors link-ed">
+                      {p.label} ↗
+                    </span>
+                    <span className="block mono text-[10px] uppercase tracking-[0.14em] text-ink-mute mt-0.5">
+                      {p.note}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          {/* Social */}
-          <div>
-            <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-4">Sledite nam</p>
-            <div className="space-y-2.5">
-              <a href="https://www.linkedin.com/in/dalibor-legen-83b4ab2b8" target="_blank" rel="noopener noreferrer" className="block text-sm text-secondary hover:text-primary transition-colors">
-                LinkedIn
-              </a>
-              <a href="https://github.com/DaliborLegen" target="_blank" rel="noopener noreferrer" className="block text-sm text-secondary hover:text-primary transition-colors">
-                GitHub
-              </a>
-              <a href="https://www.instagram.com/aiprosolutions_slovenija" target="_blank" rel="noopener noreferrer" className="block text-sm text-secondary hover:text-primary transition-colors">
-                Instagram
-              </a>
-            </div>
+          {/* Contact + social */}
+          <div className="col-span-6 sm:col-span-3 lg:col-span-2">
+            <p className="mono text-[10px] uppercase tracking-[0.2em] text-ink-mute mb-5">
+              Splet
+            </p>
+            <ul className="space-y-2">
+              {social.map((s) => (
+                <li key={s.href}>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="serif text-[15px] text-ink-soft hover:text-ink link-ed inline-block"
+                  >
+                    {s.label} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-border mt-12 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-tertiary">&copy; 2025 AIPRO Solutions. Vse pravice pridržane.</p>
-          <p className="text-xs text-tertiary">Izdelano z ❤️ v Sloveniji</p>
+        <div className="mt-16 lg:mt-20 pt-8 border-t border-rule flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mono text-[10px] uppercase tracking-[0.18em] text-ink-mute">
+          <span>© 2026 AI PRO Solutions d.o.o.</span>
+          <span>info@aiprosolutions.si</span>
+          <span>Postavljeno z mislijo. Slovenija.</span>
         </div>
       </div>
     </footer>

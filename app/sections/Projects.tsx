@@ -2,46 +2,122 @@
 import AnimatedSection from "../components/AnimatedSection";
 
 const projects = [
-  { title: "AI asistent za podporo strankam", desc: "Inteligentni chatbot, ki samodejno rešuje 80% poizvedb strank in razbremeni vašo ekipo.", tags: ["AI", "NLP", "Chatbot"] },
-  { title: "Platforma za avtomatizacijo procesov", desc: "Centraliziran sistem za upravljanje delovnih tokov, ki zmanjša ročno delo za 60%.", tags: ["Avtomatizacija", "Workflow", "API"] },
-  { title: "Poslovna nadzorna plošča", desc: "Real-time analitika in vizualizacija ključnih poslovnih metrik na enem mestu.", tags: ["Dashboard", "Analitika", "BI"] },
-  { title: "Konverzijsko optimizirana spletna stran", desc: "Sodobna korporativna stran z vrhunsko uporabniško izkušnjo in merljivimi rezultati.", tags: ["Next.js", "UX", "Konverzije"] },
+  {
+    edition: "№ 001",
+    title: "Revivio",
+    italic: "AI obnova fotografij",
+    desc: "B2C SaaS produkt za obnovo poškodovanih in starih fotografij. Plačilna integracija, queue za AI obdelavo, slovenski + angleški jezik.",
+    stack: ["Next.js 16", "Supabase", "Stripe", "Gemini"],
+    url: "https://revivio.si",
+  },
+  {
+    edition: "№ 002",
+    title: "ProfiPix",
+    italic: "AI fotografije nastanitev",
+    desc: "Avtomatsko izboljšanje fotografij za nastanitvene objekte. 2-krat več klikov v rezervacijah, 90 % nižji strošek od profesionalnega fotografa.",
+    stack: ["Next.js", "Vercel", "Image AI"],
+    url: "https://profipix.si",
+  },
+  {
+    edition: "№ 003",
+    title: "Formatory",
+    italic: "pretvorba datotek + scan",
+    desc: "Spletna aplikacija za pretvorbo datotek in OCR skeniranje dokumentov. Desktop različica v razvoju.",
+    stack: ["Next.js 16", "Vercel"],
+    url: "https://formatory.si",
+  },
+  {
+    edition: "№ 004",
+    title: "Casino chatbot",
+    italic: "podpora v živo",
+    desc: "AI chatbot za podporo strankam casino.si platforme. Razumevanje slovenščine, eskalacija na človeka, real-time analitika pogovorov.",
+    stack: ["Next.js 16", "Supabase", "Claude API"],
+    url: null,
+  },
 ];
 
 export default function Projects() {
   return (
-    <section id="projekti" className="relative z-10 py-28">
-      <div className="max-w-6xl mx-auto px-6">
-        <AnimatedSection className="text-center mb-16">
-          <p className="text-xs font-semibold text-accent tracking-[0.25em] uppercase mb-3">Projekti</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight">Naše rešitve</h2>
+    <section id="projekti" className="relative py-32 lg:py-44 bg-paper-soft">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <AnimatedSection className="mb-20 lg:mb-28">
+          <div className="grid grid-cols-12 gap-x-6 items-end">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="label">— 04 / Delo</p>
+            </div>
+            <div className="col-span-12 lg:col-span-9 mt-4 lg:mt-0">
+              <h2 className="display text-[12vw] sm:text-[8vw] lg:text-[6.5vw] xl:text-[104px] text-ink leading-[0.9]">
+                Izbrano delo,
+                <br />
+                <span className="display-italic text-terracotta">v obtoku.</span>
+              </h2>
+            </div>
+          </div>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 gap-5">
+        <div className="grid grid-cols-12 gap-x-6 gap-y-16">
           {projects.map((p, i) => (
-            <AnimatedSection key={p.title} delay={i * 0.1}>
-              <div className="card rounded-2xl p-8 h-full group cursor-default">
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-base font-bold text-primary group-hover:text-accent transition-colors duration-300 pr-4">
-                    {p.title}
-                  </h3>
-                  <span className="text-tertiary group-hover:text-accent shrink-0 transition-all duration-300 group-hover:translate-x-1">→</span>
+            <AnimatedSection
+              key={p.title}
+              delay={i * 0.08}
+              className={`col-span-12 lg:col-span-6 ${i % 2 === 1 ? "lg:mt-24" : ""}`}
+            >
+              <article className="group">
+                <div className="aspect-[4/3] bg-ink relative overflow-hidden mb-6">
+                  {/* Editorial cover plate — typographic instead of generic image */}
+                  <div className="absolute inset-0 flex flex-col p-8 lg:p-10 transition-transform duration-700 group-hover:scale-[1.02]">
+                    <div className="flex items-baseline justify-between text-paper">
+                      <span className="mono text-[10px] uppercase tracking-[0.2em] opacity-70">
+                        {p.edition}
+                      </span>
+                      <span className="mono text-[10px] uppercase tracking-[0.2em] opacity-70">
+                        {String(i + 1).padStart(2, "0")} / 0{projects.length}
+                      </span>
+                    </div>
+                    <div className="flex-1 flex items-center">
+                      <h3 className="display text-[64px] sm:text-[80px] lg:text-[88px] text-paper leading-[0.92]">
+                        {p.title}
+                      </h3>
+                    </div>
+                    <p className="display-italic text-[20px] lg:text-[24px] text-terracotta-soft leading-tight">
+                      — {p.italic}
+                    </p>
+                  </div>
+                  {/* Subtle plate accent */}
+                  <div className="absolute top-0 right-0 w-px h-full bg-terracotta/40" />
                 </div>
-                <p className="text-sm text-secondary leading-relaxed mb-5">{p.desc}</p>
-                <div className="flex flex-wrap gap-2">
-                  {p.tags.map((t) => (
-                    <span key={t} className="text-[10px] font-mono text-accent/60 bg-accent/5 border border-accent/10 px-2.5 py-1 rounded-md uppercase tracking-wider">
-                      {t}
-                    </span>
-                  ))}
+
+                <div className="grid grid-cols-12 gap-x-4">
+                  <div className="col-span-12 sm:col-span-7">
+                    <p className="serif text-[15px] lg:text-[16px] text-ink-soft leading-[1.6]">
+                      {p.desc}
+                    </p>
+                  </div>
+                  <div className="col-span-12 sm:col-span-5 mt-4 sm:mt-0 flex flex-col items-start sm:items-end gap-2">
+                    <div className="flex flex-wrap gap-x-3 gap-y-1 sm:justify-end">
+                      {p.stack.map((s) => (
+                        <span key={s} className="mono text-[10px] uppercase tracking-[0.14em] text-ink-mute">
+                          {s}
+                        </span>
+                      ))}
+                    </div>
+                    {p.url && (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mono text-[11px] uppercase tracking-[0.18em] text-ink hover:text-terracotta transition-colors mt-2 link-ed"
+                      >
+                        Obišči ↗
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
+              </article>
             </AnimatedSection>
           ))}
         </div>
       </div>
-
-      <div className="glow-line max-w-2xl mx-auto mt-28" />
     </section>
   );
 }

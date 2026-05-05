@@ -8,70 +8,85 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="relative z-10 py-28">
-      <div className="max-w-3xl mx-auto px-6">
-        <AnimatedSection className="text-center mb-14">
-          <p className="text-xs font-semibold text-accent tracking-[0.25em] uppercase mb-3">
-            Pogosta vprašanja
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight">
-            Imate vprašanje?
-          </h2>
-          <p className="text-secondary mt-4 max-w-lg mx-auto">
-            Tu so odgovori na najpogostejša vprašanja. Če ne najdete svojega,
-            nam pišite na info@aiprosolutions.si.
-          </p>
+    <section id="faq" className="relative py-32 lg:py-44">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <AnimatedSection className="mb-20 lg:mb-24">
+          <div className="grid grid-cols-12 gap-x-6 items-end">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="label">— 06 / Vprašanja</p>
+            </div>
+            <div className="col-span-12 lg:col-span-9 mt-4 lg:mt-0">
+              <h2 className="display text-[10vw] sm:text-[7vw] lg:text-[5.5vw] xl:text-[88px] text-ink leading-[0.95]">
+                Pogosto <span className="display-italic text-terracotta">vprašano.</span>
+              </h2>
+            </div>
+          </div>
         </AnimatedSection>
 
-        <div className="flex flex-col gap-3">
-          {faqItems.map((item, i) => {
-            const isOpen = open === i;
-            return (
-              <AnimatedSection key={item.q} delay={i * 0.04}>
-                <div className="card rounded-2xl overflow-hidden">
-                  <button
-                    type="button"
-                    onClick={() => setOpen(isOpen ? null : i)}
-                    aria-expanded={isOpen}
-                    className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 group"
-                  >
-                    <h3 className="text-base font-semibold text-primary group-hover:text-accent transition-colors duration-300">
-                      {item.q}
-                    </h3>
-                    <span
-                      className={`flex-shrink-0 w-8 h-8 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center text-accent transition-transform duration-300 ${
-                        isOpen ? "rotate-45" : ""
-                      }`}
-                      aria-hidden="true"
-                    >
-                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                        <path d="M7 1V13M1 7H13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-                      </svg>
-                    </span>
-                  </button>
-                  <AnimatePresence initial={false}>
-                    {isOpen && (
-                      <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
-                        className="overflow-hidden"
+        <div className="grid grid-cols-12 gap-x-6">
+          <div className="col-span-12 lg:col-start-4 lg:col-span-9">
+            <div className="border-t border-ink">
+              {faqItems.map((item, i) => {
+                const isOpen = open === i;
+                return (
+                  <AnimatedSection key={item.q} delay={i * 0.03}>
+                    <div className="border-b border-rule">
+                      <button
+                        type="button"
+                        onClick={() => setOpen(isOpen ? null : i)}
+                        aria-expanded={isOpen}
+                        className="w-full text-left py-7 lg:py-8 flex items-baseline gap-6 group"
                       >
-                        <p className="px-6 pb-6 text-sm text-secondary leading-relaxed">
-                          {item.a}
-                        </p>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
-              </AnimatedSection>
-            );
-          })}
+                        <span className="mono text-[11px] text-ink-mute mt-2 shrink-0">
+                          {String(i + 1).padStart(2, "0")}
+                        </span>
+                        <span className="flex-1 display text-[20px] lg:text-[26px] text-ink leading-[1.25] group-hover:text-terracotta transition-colors">
+                          {item.q}
+                        </span>
+                        <span
+                          className={`mono text-[18px] text-ink-mute group-hover:text-terracotta transition-all duration-300 mt-1 shrink-0 ${
+                            isOpen ? "rotate-45" : ""
+                          }`}
+                          aria-hidden="true"
+                        >
+                          +
+                        </span>
+                      </button>
+                      <AnimatePresence initial={false}>
+                        {isOpen && (
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                            className="overflow-hidden"
+                          >
+                            <div className="pl-[44px] pr-12 pb-8">
+                              <p className="serif text-[16px] lg:text-[17px] text-ink-soft leading-[1.6] max-w-[640px]">
+                                {item.a}
+                              </p>
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  </AnimatedSection>
+                );
+              })}
+            </div>
+
+            <div className="mt-12 pt-8 border-t border-rule">
+              <p className="serif text-[16px] text-ink-soft">
+                Ne najdete odgovora? Pišite nam na{" "}
+                <a href="mailto:info@aiprosolutions.si" className="link-ed text-ink">
+                  info@aiprosolutions.si
+                </a>{" "}
+                — odgovorimo v 24 urah.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="glow-line max-w-2xl mx-auto mt-28" />
     </section>
   );
 }

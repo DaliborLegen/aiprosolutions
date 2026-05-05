@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import NetworkBG from "./components/NetworkBG";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import WhyUs from "./sections/WhyUs";
@@ -13,21 +12,18 @@ import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
-    <>
-      <NetworkBG />
-      <div className="relative grid-bg">
-        <Navbar />
-        <Hero />
-        <Services />
-        <WhyUs />
-        <Process />
-        <Projects />
-        <Testimonials />
-        <CTA />
-        <FAQ />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+    <main className="relative">
+      <Navbar />
+      <Hero />
+      <Services />
+      <WhyUs />
+      <Process />
+      <Projects />
+      <Testimonials />
+      <CTA />
+      <FAQ />
+      <Contact />
+      <Footer />
+    </main>
   );
 }

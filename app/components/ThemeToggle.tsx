@@ -2,34 +2,30 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(true);
+  const [dark, setDark] = useState(false);
 
   useEffect(() => {
-    if (localStorage.getItem("theme") === "light") {
-      setDark(false);
-      document.documentElement.classList.add("light");
-    }
+    const saved = localStorage.getItem("theme");
+    const initial = saved === "dark";
+    setDark(initial);
+    document.documentElement.classList.toggle("dark", initial);
   }, []);
 
   const toggle = () => {
     const next = !dark;
     setDark(next);
-    if (next) {
-      document.documentElement.classList.remove("light");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.add("light");
-      localStorage.setItem("theme", "light");
-    }
+    document.documentElement.classList.toggle("dark", next);
+    localStorage.setItem("theme", next ? "dark" : "light");
   };
 
   return (
     <button
       onClick={toggle}
-      className="w-9 h-9 rounded-lg border border-border hover:border-border-hover flex items-center justify-center text-secondary hover:text-primary transition-all duration-300"
-      aria-label="Preklopi temo"
+      aria-label={dark ? "Preklopi na svetlo temo" : "Preklopi na temno temo"}
+      className="group flex items-center gap-2 mono text-[10px] uppercase tracking-[0.18em] text-ink-mute hover:text-ink transition-colors"
     >
-      {dark ? "☀️" : "🌙"}
+      <span className={`inline-block w-1.5 h-1.5 rounded-full transition-colors ${dark ? "bg-ink-faint" : "bg-ink"}`} />
+      <span className="hidden sm:inline">{dark ? "Night" : "Day"}</span>
     </button>
   );
 }

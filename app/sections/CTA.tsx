@@ -3,24 +3,27 @@ import AnimatedSection from "../components/AnimatedSection";
 
 export default function CTA() {
   return (
-    <section className="relative z-10 py-20">
-      <div className="max-w-4xl mx-auto px-6">
+    <section className="relative py-32 lg:py-44 bg-ink text-paper">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         <AnimatedSection>
-          <div className="relative overflow-hidden rounded-3xl grad-bg p-12 sm:p-16 text-center">
-            {/* Decorative circles */}
-            <div className="absolute top-[-60px] right-[-60px] w-[200px] h-[200px] rounded-full bg-white/10 blur-[40px]" />
-            <div className="absolute bottom-[-40px] left-[-40px] w-[150px] h-[150px] rounded-full bg-white/5 blur-[30px]" />
-
-            <div className="relative">
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-4">
-                Pripravljen na digitalni preskok?
+          <div className="grid grid-cols-12 gap-x-6 gap-y-12 items-end">
+            <div className="col-span-12 lg:col-span-9">
+              <p className="label mb-6" style={{ color: "var(--ink-faint)" }}>
+                — Pripravljen?
+              </p>
+              <h2 className="display text-[12vw] sm:text-[8vw] lg:text-[7vw] xl:text-[120px] text-paper leading-[0.92]">
+                Pogovorimo se
+                <br />
+                o vaši <span className="display-italic text-terracotta-soft">ideji.</span>
               </h2>
-              <p className="text-white/70 mb-8 max-w-lg mx-auto">
-                Pogovorimo se o vašem projektu. Prva konzultacija je brezplačna.
+            </div>
+            <div className="col-span-12 lg:col-span-3 lg:text-right">
+              <p className="serif text-[18px] text-paper/70 leading-[1.5] mb-8">
+                Prva 30-minutna konzultacija je <em className="italic text-paper">brezplačna</em>. Brez vezave, brez prodajnega pritiska.
               </p>
               <a
                 href="#kontakt"
-                className="inline-flex bg-white text-bg font-bold px-8 py-4 rounded-xl text-sm hover:bg-white/90 transition-all duration-300 shadow-lg"
+                className="inline-flex bg-paper text-ink mono text-[12px] uppercase tracking-[0.16em] px-7 py-4 hover:bg-terracotta-soft hover:text-paper transition-colors"
               >
                 Začnite zdaj →
               </a>
@@ -28,8 +31,6 @@ export default function CTA() {
           </div>
         </AnimatedSection>
       </div>
-
-      <div className="glow-line max-w-2xl mx-auto mt-20" />
     </section>
   );
 }

@@ -2,31 +2,70 @@
 import AnimatedSection from "../components/AnimatedSection";
 
 const testimonials = [
-  { quote: "AIPRO Solutions je bistveno pospešil našo digitalizacijo. Profesionalni, odzivni in rešitve delujejo brezhibno.", name: "Marko K.", role: "Direktor, LogiTech d.o.o." },
-  { quote: "Njihov AI chatbot nam je zmanjšal obremenitev podpore za 70%. Rezultati so presenetljivi.", name: "Ana P.", role: "Vodja IT, MedPro" },
-  { quote: "Od spletne strani do avtomatizacije — vse na enem mestu. Priporočamo vsakemu podjetju, ki želi rasti.", name: "Tomaž R.", role: "Ustanovitelj, GreenScale" },
+  {
+    quote:
+      "AI PRO Solutions je bistveno pospešil našo digitalizacijo. Profesionalni, odzivni in rešitve delujejo brezhibno.",
+    name: "Marko K.",
+    role: "Direktor",
+    company: "LogiTech d.o.o.",
+  },
+  {
+    quote:
+      "Njihov AI chatbot nam je zmanjšal obremenitev podpore za 70 %. Rezultati so presenetljivi in se kažejo že prvi mesec.",
+    name: "Ana P.",
+    role: "Vodja IT",
+    company: "MedPro",
+  },
+  {
+    quote:
+      "Od spletne strani do avtomatizacije — vse na enem mestu. Priporočamo vsakemu podjetju, ki želi rasti brez tehničnega dolga.",
+    name: "Tomaž R.",
+    role: "Ustanovitelj",
+    company: "GreenScale",
+  },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="relative z-10 py-28">
-      <div className="max-w-6xl mx-auto px-6">
-        <AnimatedSection className="text-center mb-16">
-          <p className="text-xs font-semibold text-accent tracking-[0.25em] uppercase mb-3">Mnenja</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-primary tracking-tight">Kaj pravijo stranke</h2>
+    <section className="relative py-32 lg:py-44">
+      <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
+        <AnimatedSection className="mb-20 lg:mb-24">
+          <div className="grid grid-cols-12 gap-x-6 items-end">
+            <div className="col-span-12 lg:col-span-3">
+              <p className="label">— 05 / Pričevanja</p>
+            </div>
+            <div className="col-span-12 lg:col-span-9 mt-4 lg:mt-0">
+              <h2 className="display text-[10vw] sm:text-[7vw] lg:text-[5.5vw] xl:text-[88px] text-ink leading-[0.95]">
+                <span className="display-italic text-terracotta">Ljudje,</span> ki nam zaupajo.
+              </h2>
+            </div>
+          </div>
         </AnimatedSection>
 
-        <div className="grid lg:grid-cols-3 gap-5">
+        <div className="border-t border-ink">
           {testimonials.map((t, i) => (
-            <AnimatedSection key={t.name} delay={i * 0.1}>
-              <div className="card rounded-2xl p-7 h-full flex flex-col">
-                <div className="text-accent text-2xl mb-4">&ldquo;</div>
-                <p className="text-sm text-secondary leading-relaxed flex-1 mb-6">{t.quote}</p>
-                <div className="border-t border-border pt-4">
-                  <p className="text-sm font-semibold text-primary">{t.name}</p>
-                  <p className="text-xs text-tertiary mt-0.5">{t.role}</p>
+            <AnimatedSection key={t.name} delay={i * 0.08}>
+              <figure className="grid grid-cols-12 gap-x-6 py-14 lg:py-20 border-b border-rule">
+                <div className="col-span-12 lg:col-span-3 mb-6 lg:mb-0">
+                  <p className="mono text-[10px] uppercase tracking-[0.18em] text-ink-mute">
+                    {String(i + 1).padStart(2, "0")} / Pričevanje
+                  </p>
                 </div>
-              </div>
+                <blockquote className="col-span-12 lg:col-span-9">
+                  <p className="display text-[28px] sm:text-[36px] lg:text-[44px] text-ink leading-[1.1] tracking-tight">
+                    <span className="display-italic text-terracotta">&ldquo;</span>
+                    {t.quote}
+                    <span className="display-italic text-terracotta">&rdquo;</span>
+                  </p>
+                  <figcaption className="mt-8 flex items-baseline gap-3 mono text-[11px] uppercase tracking-[0.18em] text-ink-mute">
+                    <span className="text-ink">{t.name}</span>
+                    <span>·</span>
+                    <span>{t.role}</span>
+                    <span>·</span>
+                    <span>{t.company}</span>
+                  </figcaption>
+                </blockquote>
+              </figure>
             </AnimatedSection>
           ))}
         </div>

@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Fraunces, Geist, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { faqItems } from "./data/faq";
 
-const inter = Inter({
+const fraunces = Fraunces({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
+  variable: "--font-fraunces",
+  display: "swap",
+  axes: ["SOFT", "WONK", "opsz"],
+});
+
+const geist = Geist({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -169,10 +176,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="sl"
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full`}
+      className={`${fraunces.variable} ${geist.variable} ${jetbrainsMono.variable} h-full`}
       suppressHydrationWarning
     >
-      <body className="min-h-full">
+      <body className="min-h-full grain antialiased">
         {children}
         <script
           type="application/ld+json"

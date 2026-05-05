@@ -3,84 +3,122 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Ambient glow */}
-      <div className="absolute top-[-200px] right-[-100px] w-[600px] h-[600px] rounded-full bg-accent/8 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-100px] left-[-200px] w-[500px] h-[500px] rounded-full bg-accent-cyan/6 blur-[100px] pointer-events-none" />
+    <section className="relative min-h-screen flex flex-col">
+      {/* Top meta bar — like a magazine masthead */}
+      <div className="absolute top-20 lg:top-24 left-0 right-0 px-6 lg:px-12 z-10">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between mono text-[10px] uppercase tracking-[0.18em] text-ink-mute">
+          <span>Volume 01 · Edition 2026</span>
+          <span className="hidden md:inline">Slovenija — daljinsko po vsej EU</span>
+          <span>№ 001</span>
+        </div>
+      </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20">
-        <div className="max-w-3xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 bg-accent/8 border border-accent/15 rounded-full px-4 py-1.5 mb-8"
-          >
-            <span className="w-2 h-2 bg-accent-cyan rounded-full animate-pulse" />
-            <span className="text-xs font-medium text-accent-cyan tracking-wide">Sprejemamo nove projekte</span>
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="text-[clamp(2.5rem,6vw,4.5rem)] font-extrabold text-primary leading-[1.08] tracking-tight mb-6"
-          >
-            Optimizirajte poslovanje
-            <br />
-            z močjo
-            <br />
-            <span className="grad-text">umetne inteligence</span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-lg text-secondary leading-relaxed mb-10 max-w-xl"
-          >
-            Pomagamo podjetjem avtomatizirati procese, zmanjšati stroške in pospešiti
-            rast z naprednimi AI rešitvami, prilagojenimi vašim potrebam.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.7 }}
-            className="flex flex-wrap gap-4"
-          >
-            <a
-              href="#kontakt"
-              className="grad-bg text-white font-semibold px-8 py-4 rounded-xl text-sm hover:shadow-xl hover:shadow-accent/25 transition-all duration-300"
+      <div className="flex-1 flex items-center pt-36 lg:pt-44 pb-20">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 w-full">
+          <div className="grid grid-cols-12 gap-x-6 gap-y-12">
+            {/* Left meta column */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="col-span-12 lg:col-span-3 lg:pt-2"
             >
-              Začnite projekt →
-            </a>
-            <a
-              href="#storitve"
-              className="border border-border text-primary font-semibold px-8 py-4 rounded-xl text-sm hover:bg-surface hover:border-border-hover transition-all duration-300"
-            >
-              Naše storitve
-            </a>
-          </motion.div>
+              <p className="label mb-3">— Sprejemamo nove projekte</p>
+              <p className="serif text-[15px] text-ink-soft leading-snug max-w-[260px]">
+                Studio za umetno inteligenco, programsko opremo in poslovno avtomatizacijo. Slovenija, od 2024.
+              </p>
+            </motion.div>
 
-          {/* Trust indicators */}
+            {/* Headline */}
+            <div className="col-span-12 lg:col-span-9">
+              <motion.h1
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.15, ease: [0.2, 0, 0, 1] }}
+                className="display text-[15vw] sm:text-[12vw] lg:text-[9.5vw] xl:text-[148px] text-ink"
+              >
+                Tehnologija
+                <br />
+                <span className="display-italic text-terracotta">brez</span> šuma.
+              </motion.h1>
+
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, delay: 0.5 }}
+                className="mt-12 grid grid-cols-12 gap-x-6 gap-y-8 lg:items-end"
+              >
+                <p className="col-span-12 md:col-span-7 serif text-[19px] lg:text-[22px] leading-[1.4] text-ink-soft">
+                  Gradimo AI agente, chatbote, spletne aplikacije in avtomatizacije, ki <em className="italic text-ink">delajo tisto, kar obljubijo</em> — brez modnih efektov, brez vrenja, brez vendor lock-in učinka.
+                </p>
+
+                <div className="col-span-12 md:col-span-5 flex flex-col items-start md:items-end gap-3">
+                  <a
+                    href="#kontakt"
+                    className="btn-ink mono text-[12px] uppercase tracking-[0.16em] px-7 py-4"
+                  >
+                    Začnite projekt →
+                  </a>
+                  <a
+                    href="#proces"
+                    className="mono text-[11px] uppercase tracking-[0.18em] text-ink-mute hover:text-ink transition-colors mt-1"
+                  >
+                    Kako delamo ↓
+                  </a>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+
+          {/* Stat strip — full-width with rules */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="flex items-center gap-8 mt-16 pt-8 border-t border-border"
+            transition={{ duration: 0.9, delay: 0.9 }}
+            className="mt-24 lg:mt-32 border-t border-ink pt-6"
           >
-            {[
-              { val: "10+", lab: "projektov" },
-              { val: "100%", lab: "zadovoljstvo" },
-              { val: "<24h", lab: "odzivni čas" },
-            ].map((s) => (
-              <div key={s.lab}>
-                <p className="text-2xl font-bold grad-text">{s.val}</p>
-                <p className="text-xs text-tertiary uppercase tracking-wider mt-1">{s.lab}</p>
-              </div>
-            ))}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-x-12">
+              {[
+                { v: "10+", l: "izvedenih projektov" },
+                { v: "100%", l: "zadovoljstvo strank" },
+                { v: "<24h", l: "odzivni čas" },
+                { v: "5", l: "produktov pod krovno znamko" },
+              ].map((s, i) => (
+                <div key={s.l} className="flex items-baseline gap-3">
+                  <span className="mono text-[10px] text-ink-faint">0{i + 1}</span>
+                  <div>
+                    <p className="display text-[44px] lg:text-[56px] text-ink leading-none">{s.v}</p>
+                    <p className="serif text-[13px] text-ink-mute mt-2">{s.l}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Drift slogan strip at bottom */}
+      <div className="overflow-hidden border-y border-rule py-6 mt-auto">
+        <div className="flex whitespace-nowrap drift">
+          {Array.from({ length: 2 }).map((_, k) => (
+            <div key={k} className="flex shrink-0 items-center gap-12 pr-12">
+              {[
+                "AI Agenti",
+                "Chatboti",
+                "Avtomatizacija",
+                "Web Razvoj",
+                "Strategija",
+                "Integracija LLM",
+                "Next.js Studio",
+                "Slovenija ↘ EU",
+              ].map((t) => (
+                <span key={t + k} className="display text-[44px] lg:text-[56px] text-ink-soft">
+                  {t}
+                  <span className="display-italic text-terracotta mx-6">·</span>
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </section>
