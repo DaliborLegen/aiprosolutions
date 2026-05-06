@@ -1,4 +1,7 @@
 import Navbar from "./components/Navbar";
+import SystemBar from "./components/SystemBar";
+import Background from "./components/Background";
+import CursorGlow from "./components/CursorGlow";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
 import WhyUs from "./sections/WhyUs";
@@ -12,18 +15,23 @@ import Footer from "./sections/Footer";
 
 export default function Home() {
   return (
-    <main className="relative">
-      <Navbar />
-      <Hero />
-      <Services />
-      <WhyUs />
-      <Process />
-      <Projects />
-      <Testimonials />
-      <CTA />
-      <FAQ />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <Background />
+      <CursorGlow />
+      <SystemBar />
+      <main className="relative z-10">
+        <Navbar />
+        <Hero />
+        <Services />
+        <WhyUs />
+        <Process />
+        <Projects />
+        <Testimonials />
+        <CTA />
+        <FAQ />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }

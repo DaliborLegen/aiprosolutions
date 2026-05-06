@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Geist, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { faqItems } from "./data/faq";
 
-const fraunces = Fraunces({
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-fraunces",
+  variable: "--font-bricolage",
   display: "swap",
-  axes: ["SOFT", "WONK", "opsz"],
+  axes: ["wdth", "opsz"],
 });
 
 const geist = Geist({
@@ -176,10 +176,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="sl"
-      className={`${fraunces.variable} ${geist.variable} ${jetbrainsMono.variable} h-full`}
+      className={`${bricolage.variable} ${geist.variable} ${jetbrainsMono.variable} h-full dark`}
       suppressHydrationWarning
     >
-      <body className="min-h-full grain antialiased">
+      <body className="min-h-full bg-void text-text antialiased noise scanlines">
         {children}
         <script
           type="application/ld+json"
