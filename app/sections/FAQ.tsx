@@ -48,6 +48,7 @@ export default function FAQ() {
                         type="button"
                         onClick={() => setOpen(isOpen ? null : i)}
                         aria-expanded={isOpen}
+                        suppressHydrationWarning
                         className="relative w-full text-left py-6 lg:py-7 px-3 flex items-baseline gap-5"
                       >
                         <span className={`mono text-[11px] tabular shrink-0 transition-colors ${isOpen ? "text-accent" : "text-text-4 group-hover:text-accent"}`}>

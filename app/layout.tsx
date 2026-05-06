@@ -179,7 +179,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       className={`${bricolage.variable} ${geist.variable} ${jetbrainsMono.variable} h-full dark`}
       suppressHydrationWarning
     >
-      <body className="min-h-full bg-void text-text antialiased noise scanlines">
+      <body className="relative min-h-full bg-void text-text antialiased noise scanlines">
         {children}
         <script
           type="application/ld+json"

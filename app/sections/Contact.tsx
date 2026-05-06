@@ -118,6 +118,7 @@ export default function Contact() {
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
+                  suppressHydrationWarning
                   className="mono text-[11px] uppercase tracking-[0.18em] text-text hover:text-accent link-amber transition-colors relative"
                 >
                   send_another →
@@ -144,6 +145,7 @@ export default function Contact() {
                       onChange={(e) => update("name", e.target.value)}
                       required
                       placeholder="Ime in priimek"
+                      suppressHydrationWarning
                       className={inputClass}
                     />
                   </div>
@@ -156,6 +158,7 @@ export default function Contact() {
                       value={form.company}
                       onChange={(e) => update("company", e.target.value)}
                       placeholder="Ime podjetja"
+                      suppressHydrationWarning
                       className={inputClass}
                     />
                   </div>
@@ -169,6 +172,7 @@ export default function Contact() {
                       onChange={(e) => update("email", e.target.value)}
                       required
                       placeholder="vas@podjetje.si"
+                      suppressHydrationWarning
                       className={inputClass}
                     />
                   </div>
@@ -182,6 +186,7 @@ export default function Contact() {
                       required
                       rows={4}
                       placeholder="Opišite vaš projekt ali izziv ..."
+                      suppressHydrationWarning
                       className={`${inputClass} resize-none`}
                     />
                   </div>
@@ -201,6 +206,7 @@ export default function Contact() {
                     <button
                       type="submit"
                       disabled={status === "sending"}
+                      suppressHydrationWarning
                       className="btn-primary disabled:opacity-60"
                     >
                       <span>{status === "sending" ? "sending..." : "transmit"}</span>

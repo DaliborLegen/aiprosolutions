@@ -73,6 +73,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(!mobileOpen)}
               className="lg:hidden text-text p-1.5 border border-line-2 hover:border-accent hover:text-accent transition-colors"
               aria-label="Meni"
+              suppressHydrationWarning
             >
               <svg width="18" height="18" viewBox="0 0 22 22" fill="none">
                 {mobileOpen ? (
