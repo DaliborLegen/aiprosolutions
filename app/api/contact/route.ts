@@ -14,7 +14,8 @@ export async function POST(req: NextRequest) {
       const resend = new Resend(apiKey);
       await resend.emails.send({
         from: "AI Pro Solutions <kontakt@aiprosolutions.si>",
-        to: "info@aiprosolutions.si",
+        to: "dalibor.legen@gmail.com",
+        cc: "info@aiprosolutions.si",
         replyTo: email,
         subject: `Novo povpraševanje od ${name}`,
         html: `
