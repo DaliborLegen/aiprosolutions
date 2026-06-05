@@ -36,9 +36,9 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-4 lg:px-8 h-14 flex items-center justify-between gap-6">
           <a href="#" className="group flex items-center gap-2.5">
-            <span className="relative w-7 h-7 grid place-items-center border border-line-bright">
-              <span className="absolute inset-0 bg-accent/0 group-hover:bg-accent/10 transition-colors duration-300" />
-              <span className="relative mono text-[12px] font-bold text-accent glow-soft">A</span>
+            <span className="relative w-7 h-7 grid place-items-center rounded-[3px] border border-accent bg-void">
+              <span className="absolute inset-0 rounded-[3px] bg-accent/0 group-hover:bg-accent/10 transition-colors duration-300" />
+              <span className="relative mono text-[11px] font-extrabold tracking-tight text-accent glow-soft">AI</span>
             </span>
             <span className="display text-[18px] tracking-tight text-text">
               ai_pro
