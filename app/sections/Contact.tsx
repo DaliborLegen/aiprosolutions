@@ -35,7 +35,7 @@ export default function Contact() {
         <Reveal className="mb-16 lg:mb-20">
           <div className="grid grid-cols-12 gap-x-6 items-end">
             <div className="col-span-12 lg:col-span-3">
-              <p className="mono-up text-[10px] text-accent mb-3">&gt; section_07</p>
+              <p className="mono-up text-[10px] text-accent mb-3">&gt; section_06</p>
               <p className="mono text-[11px] text-text-3">/contact</p>
             </div>
             <div className="col-span-12 lg:col-span-9 mt-6 lg:mt-0">

@@ -7,7 +7,6 @@ import Services from "./sections/Services";
 import WhyUs from "./sections/WhyUs";
 import Process from "./sections/Process";
 import Projects from "./sections/Projects";
-import Testimonials from "./sections/Testimonials";
 import CTA from "./sections/CTA";
 import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
@@ -26,7 +25,6 @@ export default function Home() {
         <WhyUs />
         <Process />
         <Projects />
-        <Testimonials />
         <CTA />
         <FAQ />
         <Contact />

@@ -38,6 +38,15 @@ const projects = [
     url: null,
     accent: "rgba(150, 120, 255, 0.16)",
   },
+  {
+    id: "005",
+    title: "CalShot",
+    italic: "foto → kalorije",
+    desc: "Mobilna AI aplikacija za štetje kalorij iz fotografije obroka. Specializirana za slovensko in balkansko hrano — lokalna baza jedi kot ključna prednost.",
+    stack: ["Expo", "Gemini", "Supabase"],
+    url: "https://calshot.si",
+    accent: "rgba(56, 189, 248, 0.16)",
+  },
 ];
 
 export default function Projects() {
