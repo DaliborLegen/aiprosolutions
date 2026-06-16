@@ -47,6 +47,15 @@ const projects = [
     url: "https://calshot.si",
     accent: "rgba(56, 189, 248, 0.16)",
   },
+  {
+    id: "006",
+    title: "AI Računovodstvo",
+    italic: "računi se poknjižijo in plačajo sami",
+    desc: "AI plast pred računovodskim programom: zajem prejetih računov iz e-pošte in bizBox, branje in avtomatsko kontiranje, enotna evidenca z opozorili na odstopanja ter priprava knjiženja v Vasco in plačil prek Halcom.",
+    stack: ["Next.js 16", "Supabase", "Claude API"],
+    url: "https://ai-racunovodstvo.com",
+    accent: "rgba(16, 185, 129, 0.16)",
+  },
 ];
 
 export default function Projects() {
