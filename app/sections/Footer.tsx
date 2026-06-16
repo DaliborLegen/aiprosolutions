@@ -3,6 +3,7 @@ const products = [
   { label: "ProfiPix", href: "https://profipix.si", note: "AI fotografije nastanitev" },
   { label: "Formatory", href: "https://formatory.si", note: "Pretvorba datotek" },
   { label: "AI Agent", href: "https://ai-agent.si", note: "AI agencija" },
+  { label: "AI Računovodstvo", href: "https://ai-racunovodstvo.com", note: "Avtomatizacija računov" },
 ];
 
 const nav = [
