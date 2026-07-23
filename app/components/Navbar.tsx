@@ -7,7 +7,7 @@ const links = [
   { href: "/#zakaj", label: "studio", num: "02" },
   { href: "/#proces", label: "proces", num: "03" },
   { href: "/#projekti", label: "delo", num: "04" },
-  { href: "/#faq", label: "vprasanja", num: "05" },
+  { href: "/blog", label: "blog", num: "05" },
   { href: "/#kontakt", label: "kontakt", num: "06" },
 ];
 
