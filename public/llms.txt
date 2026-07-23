@@ -35,6 +35,13 @@
 - [AI Agent](https://ai-agent.si): AI agencija in avtomatizacija družbenih omrežij
 - [AI Računovodstvo](https://ai-racunovodstvo.com): avtomatska obdelava prejetih računov
 
+## Blog
+
+- [Blog](https://aiprosolutions.si/blog): praktični članki o umetni inteligenci, avtomatizaciji in razvoju za slovenska podjetja
+- [Koliko stane AI chatbot za podjetje](https://aiprosolutions.si/blog/koliko-stane-ai-chatbot): razponi cen izdelave, mesečni stroški delovanja in kdaj se naložba povrne
+- [AI avtomatizacija: 8 primerov, ki se splačajo](https://aiprosolutions.si/blog/ai-avtomatizacija-primeri): konkretni procesi za avtomatizacijo in kako izbrati prvega
+- [Umetna inteligenca za mala in srednja podjetja](https://aiprosolutions.si/blog/umetna-inteligenca-za-mala-podjetja): vodnik za začetek, pogoste napake in prvi koraki
+
 ## Glavna stran
 
 - [aiprosolutions.si](https://aiprosolutions.si): krovna predstavitvena stran s storitvami, procesom dela, projekti in kontaktom
