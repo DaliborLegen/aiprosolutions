@@ -3,7 +3,17 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "../components/Reveal";
 
-const services = [
+type Service = {
+  num: string;
+  cmd: string;
+  title: string;
+  sub: string;
+  desc: string;
+  keywords: string[];
+  href?: string;
+};
+
+const services: Service[] = [
   {
     num: "01",
     cmd: "ai_solutions",
@@ -11,6 +21,7 @@ const services = [
     sub: "agenti, chatboti, RAG, function calling",
     desc: "Razvijamo AI agente in chatbote, ki avtomatizirajo komunikacijo s strankami, prodajo in interno znanje. Integracije z OpenAI, Anthropic in Gemini, prilagojene vašim podatkom.",
     keywords: ["GPT-5", "Claude", "RAG", "Function Calling"],
+    href: "/storitve/umetna-inteligenca-za-podjetja",
   },
   {
     num: "02",
@@ -27,6 +38,7 @@ const services = [
     sub: "Next.js, hitre kot ta heading",
     desc: "Hitre, statične in dinamične spletne strani, postavljene na sodobnem stack-u. SEO, dostopnost, Core Web Vitals — vse v paketu, brez kompromisov pri dizajnu.",
     keywords: ["Next.js", "React", "SEO", "Vercel"],
+    href: "/storitve/izdelava-spletnih-strani",
   },
   {
     num: "04",
@@ -35,6 +47,7 @@ const services = [
     sub: "manj klikov, več rezultatov",
     desc: "Povezujemo vaše sisteme, odstranjujemo ročne korake in postavimo avtomatske delovne tokove. Kjer je smiselno, dodamo AI v zanko, da naredi odločitve namesto človeka.",
     keywords: ["Workflows", "Webhooks", "ETL", "n8n"],
+    href: "/storitve/ai-avtomatizacija",
   },
   {
     num: "05",
@@ -43,6 +56,7 @@ const services = [
     sub: "kaj graditi in zakaj",
     desc: "Pregled obstoječega stack-a, izbira pravih tehnologij in tehnični roadmap. Pomagamo se izogniti dragih napak in fokusirati ekipo na stvari, ki res premaknejo iglo.",
     keywords: ["Audit", "Architecture", "Roadmap", "Due Diligence"],
+    href: "/storitve/ai-svetovanje",
   },
   {
     num: "06",
@@ -90,8 +104,15 @@ export default function Services() {
                 <article
                   onMouseEnter={() => setHover(i)}
                   onMouseLeave={() => setHover(null)}
-                  className="group relative border-b border-line cursor-default overflow-hidden"
+                  className={`group relative border-b border-line overflow-hidden ${s.href ? "cursor-pointer" : "cursor-default"}`}
                 >
+                  {s.href && (
+                    <a
+                      href={s.href}
+                      aria-label={`${s.title}: več o storitvi`}
+                      className="absolute inset-0 z-10"
+                    />
+                  )}
                   {/* fill bar */}
                   <span
                     aria-hidden

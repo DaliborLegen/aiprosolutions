@@ -3,12 +3,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { href: "#storitve", label: "storitve", num: "01" },
-  { href: "#zakaj", label: "studio", num: "02" },
-  { href: "#proces", label: "proces", num: "03" },
-  { href: "#projekti", label: "delo", num: "04" },
-  { href: "#faq", label: "vprasanja", num: "05" },
-  { href: "#kontakt", label: "kontakt", num: "06" },
+  { href: "/#storitve", label: "storitve", num: "01" },
+  { href: "/#zakaj", label: "studio", num: "02" },
+  { href: "/#proces", label: "proces", num: "03" },
+  { href: "/#projekti", label: "delo", num: "04" },
+  { href: "/#faq", label: "vprasanja", num: "05" },
+  { href: "/#kontakt", label: "kontakt", num: "06" },
 ];
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-4 lg:px-8 h-14 flex items-center justify-between gap-6">
-          <a href="#" className="group flex items-center gap-2.5">
+          <a href="/" className="group flex items-center gap-2.5">
             <span className="relative w-7 h-7 grid place-items-center rounded-[3px] border border-accent bg-void">
               <span className="absolute inset-0 rounded-[3px] bg-accent/0 group-hover:bg-accent/10 transition-colors duration-300" />
               <span className="relative mono text-[11px] font-extrabold tracking-tight text-accent glow-soft">AI</span>
@@ -63,7 +63,7 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <a
-              href="#kontakt"
+              href="/#kontakt"
               className="hidden sm:inline-flex items-center gap-2 mono text-[11px] uppercase tracking-[0.16em] text-void bg-accent px-4 py-2 hover:bg-accent-2 transition-all hover:shadow-[0_0_28px_rgba(255,182,39,0.45)]"
             >
               <span>init_project</span>

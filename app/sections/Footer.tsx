@@ -7,12 +7,21 @@ const products = [
 ];
 
 const nav = [
-  { label: "storitve", href: "#storitve" },
-  { label: "studio", href: "#zakaj" },
-  { label: "proces", href: "#proces" },
-  { label: "delo", href: "#projekti" },
-  { label: "vprasanja", href: "#faq" },
-  { label: "kontakt", href: "#kontakt" },
+  { label: "storitve", href: "/#storitve" },
+  { label: "studio", href: "/#zakaj" },
+  { label: "proces", href: "/#proces" },
+  { label: "delo", href: "/#projekti" },
+  { label: "vprasanja", href: "/#faq" },
+  { label: "kontakt", href: "/#kontakt" },
+];
+
+const storitveLinks = [
+  { label: "Umetna inteligenca za podjetja", href: "/storitve/umetna-inteligenca-za-podjetja" },
+  { label: "AI avtomatizacija", href: "/storitve/ai-avtomatizacija" },
+  { label: "AI chatbot", href: "/storitve/ai-chatbot" },
+  { label: "AI agenti", href: "/storitve/ai-agenti" },
+  { label: "Izdelava spletnih strani", href: "/storitve/izdelava-spletnih-strani" },
+  { label: "AI svetovanje", href: "/storitve/ai-svetovanje" },
 ];
 
 const social = [
@@ -43,6 +52,19 @@ export default function Footer() {
             </p>
             <ul className="space-y-2">
               {nav.map((n) => (
+                <li key={n.href}>
+                  <a href={n.href} className="mono text-[12px] text-text-2 hover:text-accent transition-colors group inline-flex items-center gap-2">
+                    <span className="text-text-4 group-hover:text-accent">→</span>
+                    {n.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="mono text-[10px] uppercase tracking-[0.2em] text-text-3 mt-8 mb-5 flex items-center gap-2">
+              <span className="text-accent">&gt;</span> storitve
+            </p>
+            <ul className="space-y-2">
+              {storitveLinks.map((n) => (
                 <li key={n.href}>
                   <a href={n.href} className="mono text-[12px] text-text-2 hover:text-accent transition-colors group inline-flex items-center gap-2">
                     <span className="text-text-4 group-hover:text-accent">→</span>

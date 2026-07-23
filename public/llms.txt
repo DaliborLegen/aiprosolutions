@@ -1,30 +1,39 @@
 # AI PRO SOLUTIONS
 
-> AI PRO SOLUTIONS d.o.o. je slovensko podjetje, specializirano za napredne AI rešitve, razvoj programske opreme in avtomatizacijo poslovnih procesov. Pomagamo podjetjem zmanjšati stroške, pospešiti rast in optimizirati poslovanje s pomočjo umetne inteligence.
+> Slovenski studio za umetno inteligenco, razvoj programske opreme in poslovno avtomatizacijo. AI PRO SOLUTIONS d.o.o. slovenskim in evropskim podjetjem razvija AI chatbote, AI agente, avtomatizacije poslovnih procesov, spletne strani in aplikacije po meri.
 
 ## O podjetju
 
 - Polno ime: AI PRO SOLUTIONS d.o.o.
 - Spletna stran: https://aiprosolutions.si
 - E-pošta: info@aiprosolutions.si
-- Sedež: Slovenija
+- Sedež: Slovenija, delo na daljavo po vsej Sloveniji in EU
 - Jezik komunikacije: slovenščina, angleščina
+
+## Ključna dejstva
+
+- Cene: preprost AI chatbot od 1.500 EUR, AI agenti in kompleksnejše integracije od 4.000 EUR. Brezplačen 30-minutni uvodni posvet in fiksne ponudbe.
+- Časovnice: manjši projekti 2-3 tedne, kompleksnejši 4-8 tednov.
+- Tehnologije: Next.js, React, TypeScript, Supabase, PostgreSQL, Vercel, API-ji vodilnih AI modelov (Anthropic Claude, OpenAI GPT, Google Gemini).
+- Naročnik po projektu prejme celotno izvorno kodo in dostope, brez vezave na izvajalca.
 
 ## Storitve
 
-- AI rešitve (chatboti, AI agenti, analitika, integracija LLM-ov)
-- Razvoj programske opreme po meri
-- Razvoj spletnih strani in aplikacij (Next.js, React)
-- Avtomatizacija poslovnih procesov
-- IT svetovanje in digitalna transformacija
-- AI video & avdio produkcija
+- [Umetna inteligenca za podjetja](https://aiprosolutions.si/storitve/umetna-inteligenca-za-podjetja): uvedba AI v poslovanje, od analize do delujoče rešitve
+- [AI avtomatizacija](https://aiprosolutions.si/storitve/ai-avtomatizacija): avtomatizacija poslovnih procesov, povezovanje sistemov, obdelava dokumentov
+- [AI chatbot](https://aiprosolutions.si/storitve/ai-chatbot): chatboti za podporo strankam, prodajo in rezervacije, v tekoči slovenščini
+- [AI agenti](https://aiprosolutions.si/storitve/ai-agenti): avtonomni AI asistenti, ki samostojno opravijo naloge v vaših sistemih
+- [Izdelava spletnih strani](https://aiprosolutions.si/storitve/izdelava-spletnih-strani): hitre, sodobne in SEO optimizirane spletne strani ter aplikacije
+- [AI svetovanje](https://aiprosolutions.si/storitve/ai-svetovanje): strategija, izbira orodij in načrt uvedbe umetne inteligence
+- AI video in avdio produkcija: generativna produkcija vsebin za marketing
 
 ## Produkti pod krovnim podjetjem
 
-- [Revivio](https://revivio.si) — AI obnova starih in poškodovanih fotografij
-- [ProfiPix](https://profipix.si) — AI izboljšava fotografij za nastanitvene objekte
-- [Formatory](https://formatory.si) — pretvorba datotek in skeniranje dokumentov
-- [AI Agent](https://ai-agent.si) — AI agencija za podjetja
+- [Revivio](https://revivio.si): AI obnova starih in poškodovanih fotografij
+- [ProfiPix](https://profipix.si): AI izboljšava fotografij za nastanitvene objekte
+- [Formatory](https://formatory.si): pretvorba datotek in skeniranje dokumentov
+- [AI Agent](https://ai-agent.si): AI agencija in avtomatizacija družbenih omrežij
+- [AI Računovodstvo](https://ai-racunovodstvo.com): avtomatska obdelava prejetih računov
 
 ## Glavna stran
 
