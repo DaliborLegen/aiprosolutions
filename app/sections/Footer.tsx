@@ -11,6 +11,7 @@ const nav = [
   { label: "studio", href: "/#zakaj" },
   { label: "proces", href: "/#proces" },
   { label: "delo", href: "/#projekti" },
+  { label: "blog", href: "/blog" },
   { label: "vprasanja", href: "/#faq" },
   { label: "kontakt", href: "/#kontakt" },
 ];
