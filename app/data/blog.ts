@@ -387,6 +387,160 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "gdpr-in-umetna-inteligenca",
+    title: "GDPR in umetna inteligenca: kaj mora vedeti podjetje",
+    metaTitle: "GDPR in umetna inteligenca: vodnik za podjetja",
+    metaDescription:
+      "Kako uskladiti umetno inteligenco z GDPR: vloge upravljavca in obdelovalca, pravna podlaga, minimizacija podatkov, prenos v ZDA (DPA in SCC) ter praktični koraki za podjetja.",
+    excerpt:
+      "GDPR ne prepoveduje umetne inteligence, zahteva pa, da veste, kaj se dogaja z osebnimi podatki. Praktičen pregled vlog, obveznosti in konkretnih korakov.",
+    date: "2026-07-27",
+    dateLabel: "27. julij 2026",
+    readMin: 10,
+    category: "Skladnost",
+    keywords: [
+      "gdpr umetna inteligenca",
+      "gdpr in ai",
+      "varstvo osebnih podatkov ai",
+      "ai gdpr skladnost",
+      "obdelava osebnih podatkov ai",
+    ],
+    related: [
+      { label: "AI svetovanje", href: "/storitve/ai-svetovanje" },
+      { label: "Umetna inteligenca za podjetja", href: "/storitve/umetna-inteligenca-za-podjetja" },
+    ],
+    blocks: [
+      {
+        t: "p",
+        c: "Ko podjetje razmišlja o umetni inteligenci, se skoraj vedno pojavi pomislek: kaj pa GDPR. Dobra novica je, da GDPR umetne inteligence ne prepoveduje. Zahteva pa, da veste, kateri osebni podatki se obdelujejo, kam potujejo in na kateri pravni podlagi. V tem članku razložimo, kako AI uskladiti z GDPR, brez pravniškega žargona in s koraki, ki jih lahko dejansko izvedete.",
+      },
+      {
+        t: "p",
+        c: "Pomembno opozorilo takoj na začetku: ta članek je splošna informacija in ne nadomešča pravnega nasveta. Za formalno oceno skladnosti se posvetujte s pravnikom ali pooblaščeno osebo za varstvo podatkov.",
+      },
+      { t: "h2", c: "Mit: umetna inteligenca in GDPR se izključujeta" },
+      {
+        t: "p",
+        c: "Najpogostejša zmota je, da uporaba AI samodejno pomeni kršitev zasebnosti. To ne drži. AI je le orodje za obdelavo podatkov, tako kot je to preglednica ali CRM. Če osebne podatke obdelujete zakonito v teh sistemih, jih lahko tudi v AI, dokler upoštevate ista načela: jasen namen, pravno podlago, minimizacijo in varnost. Ključno vprašanje ni ali smete uporabljati AI, ampak kako jo nastavite.",
+      },
+      { t: "h2", c: "Kdo je kdo: upravljavec, obdelovalec, pod-obdelovalec" },
+      {
+        t: "p",
+        c: "GDPR razlikuje med vlogami, in prav razumevanje teh vlog je temelj skladnosti:",
+      },
+      {
+        t: "ul",
+        items: [
+          "Upravljavec (controller) je tisti, ki določa, zakaj in kako se podatki obdelujejo. Če zbirate podatke svojih strank, ste upravljavec vi.",
+          "Obdelovalec (processor) obdeluje podatke v imenu upravljavca. Če za AI rešitev najamete zunanjega izvajalca, je ta vaš obdelovalec.",
+          "Pod-obdelovalec (sub-processor) je storitev, ki jo obdelovalec uporabi naprej. Ponudnik AI modela (na primer Anthropic ali OpenAI), gostovanje in baza podatkov so tipični pod-obdelovalci.",
+        ],
+      },
+      {
+        t: "p",
+        c: "Za skladnost potrebujete pisne dogovore vzdolž te verige: pogodbo o obdelavi podatkov (DPA) med vami in izvajalcem ter DPA-je izvajalca z vsemi pod-obdelovalci. Resni ponudniki AI modelov imajo DPA že pripravljen kot standardni del pogojev.",
+      },
+      { t: "h2", c: "Pravna podlaga: zakaj sploh smete obdelovati" },
+      {
+        t: "p",
+        c: "Vsaka obdelava osebnih podatkov potrebuje pravno podlago. V praksi so za AI rešitve najpogostejše tri:",
+      },
+      {
+        t: "ul",
+        items: [
+          "Izvajanje pogodbe: kadar je obdelava potrebna za storitev, ki jo je stranka naročila, na primer chatbot, ki obravnava njeno povpraševanje ali rezervacijo.",
+          "Zakoniti interes: kadar imate utemeljen poslovni razlog, ki ne prevlada nad pravicami posameznika, na primer razvrščanje prejete e-pošte. Zahteva presojo in dokumentacijo.",
+          "Privolitev: za obdelave, ki niso nujne za storitev, na primer trženje in upsell. Mora biti prostovoljna, konkretna in preklicljiva.",
+        ],
+      },
+      { t: "h2", c: "Minimizacija: najmočnejši ukrep, ki ga imate" },
+      {
+        t: "p",
+        c: "Najboljši način za obvladovanje tveganja je preprost: v AI pošljite čim manj osebnih podatkov. Pogosto se izkaže, da model za svojo nalogo sploh ne potrebuje imena, telefona ali naslova. Če chatbot odgovarja na vprašanje o izdelku, potrebuje besedilo vprašanja, ne pa celotnega profila stranke.",
+      },
+      {
+        t: "quote",
+        c: "Podatek, ki ga v AI nikoli ne pošljete, ne more uiti, biti napačno shranjen ali zlorabljen. Minimizacija je hkrati najcenejši in najučinkovitejši ukrep.",
+      },
+      {
+        t: "p",
+        c: "V praksi to pomeni, da rešitve gradimo tako, da se v model pošlje le tisto, kar je za nalogo nujno. Občutljivi podatki (ime, kontakt, zdravstvene informacije) ostanejo v vaših sistemih in se v prompt ne prepišejo. To je odločitev pri načrtovanju, ne naknadni popravek.",
+      },
+      { t: "h2", c: "Prenos podatkov v ZDA: DPA in standardne pogodbene klavzule" },
+      {
+        t: "p",
+        c: "Večina vodilnih AI modelov teče na ameriški infrastrukturi, kar sproža vprašanje prenosa podatkov iz EU v ZDA. GDPR takega prenosa ne prepoveduje, zahteva pa ustrezno zaščito. Standardni instrument so standardne pogodbene klavzule (SCC), ki so pri resnih ponudnikih samodejno del pogodbe o obdelavi.",
+      },
+      {
+        t: "p",
+        c: "Poleg tega je pri načrtovanju vredno preveriti tri nastavitve, ki znatno znižajo tveganje:",
+      },
+      {
+        t: "ul",
+        items: [
+          "Hramba podatkov (retention): pri poslovni rabi vsebina promptov privzeto ni uporabljena za učenje modela, hrani pa se le kratek čas ali sploh ne. Preverite privzete nastavitve ponudnika.",
+          "Ničelna hramba (Zero Data Retention): nekateri ponudniki omogočajo način, pri katerem se vsebina po obdelavi ne shrani niti začasno. Za občutljive obdelave je to močan dodaten ukrep.",
+          "Lokacija obdelave (data residency): pri nekaterih ponudnikih je mogoče obdelavo omejiti na strežnike v EU, kar dodatno poenostavi vprašanje prenosov.",
+        ],
+      },
+      {
+        t: "p",
+        c: "Te možnosti niso vklopljene same od sebe. Del dobre postavitve je, da jih glede na občutljivost podatkov nastavimo ustrezno, ne da bi po nepotrebnem zapletli delovanje.",
+      },
+      { t: "h2", c: "Kaj mora vedeti posameznik" },
+      {
+        t: "p",
+        c: "GDPR zahteva preglednost. Če v komunikaciji ali obdelavi sodeluje AI, morajo biti stranke o tem obveščene v vaši politiki zasebnosti. Obvestilo naj na razumljiv način pove, da se uporablja AI-podprta obdelava, s katerimi obdelovalci sodelujete in kako lahko posameznik uveljavlja svoje pravice (dostop, popravek, izbris). To obvestilo ni birokratska formalnost, ampak gradi zaupanje.",
+      },
+      { t: "h2", c: "Praktični koraki za skladnost" },
+      {
+        t: "p",
+        c: "Če uvajate AI in želite biti skladni z GDPR, priporočamo naslednje zaporedje:",
+      },
+      {
+        t: "ol",
+        items: [
+          "Popišite, kateri osebni podatki bi šli v AI rešitev, in preverite, ali so vsi res potrebni.",
+          "Zmanjšajte nabor na nujni minimum in občutljive podatke obdržite zunaj modela.",
+          "Določite pravno podlago za vsako obdelavo (pogodba, zakoniti interes ali privolitev).",
+          "Uredite pogodbe o obdelavi (DPA) z izvajalcem in preverite SCC ter pod-obdelovalce.",
+          "Nastavite hrambo, ničelno hrambo ali lokacijo obdelave glede na občutljivost podatkov.",
+          "Dopolnite politiko zasebnosti z informacijo o AI-podprti obdelavi in obdelovalcih.",
+          "Vodite evidenco dejavnosti obdelave in poskrbite za osnovno varnost (dostopi, šifriranje, skrivnosti v okolju, ne v kodi).",
+        ],
+      },
+      {
+        t: "p",
+        c: "Videti je veliko, a pri dobro zastavljenem projektu je večina teh korakov opravljena že s pravilnim načrtovanjem. Skladnost ni ovira za AI, je del kakovostne izvedbe.",
+      },
+      { t: "h2", c: "Kje začeti" },
+      {
+        t: "p",
+        c: "Če načrtujete AI rešitev, ki bo obdelovala osebne podatke, se splača skladnost premisliti že pri zasnovi, ne šele ob zagonu. Na brezplačnem posvetu pregledamo, kateri podatki bi bili vključeni, in predlagamo postavitev, ki tveganje zniža na minimum. Za formalno pravno oceno vas po potrebi usmerimo k ustreznemu strokovnjaku.",
+      },
+      {
+        t: "cta",
+        c: "Načrtujete AI rešitev z osebnimi podatki? Pomagamo jo zastaviti tako, da je skladnost vgrajena od začetka.",
+        href: "/#kontakt",
+        label: "Brezplačen posvet",
+      },
+    ],
+    faq: [
+      {
+        q: "Ali GDPR prepoveduje uporabo umetne inteligence?",
+        a: "Ne. GDPR umetne inteligence ne prepoveduje. Zahteva le, da osebne podatke obdelujete zakonito: z jasnim namenom, pravno podlago, minimizacijo podatkov in ustrezno varnostjo. AI je orodje za obdelavo, za katero veljajo ista pravila kot za druge sisteme.",
+      },
+      {
+        q: "Ali smem osebne podatke pošiljati v AI model v ZDA?",
+        a: "Da, če je prenos ustrezno zaščiten. Standardni instrument so standardne pogodbene klavzule (SCC), ki so pri resnih ponudnikih del pogodbe o obdelavi. Tveganje dodatno znižate z minimizacijo podatkov, ničelno hrambo in po možnosti obdelavo v EU.",
+      },
+      {
+        q: "Kaj je najpomembnejši ukrep za skladnost AI z GDPR?",
+        a: "Minimizacija. V AI pošljite čim manj osebnih podatkov, po možnosti brez imena, kontaktov in občutljivih podatkov. Podatek, ki v model sploh ne gre, ne more biti izpostavljen tveganju, zato je minimizacija hkrati najcenejši in najučinkovitejši ukrep.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {
