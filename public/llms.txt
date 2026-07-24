@@ -41,6 +41,7 @@
 - [Koliko stane AI chatbot za podjetje](https://aiprosolutions.si/blog/koliko-stane-ai-chatbot): razponi cen izdelave, mesečni stroški delovanja in kdaj se naložba povrne
 - [AI avtomatizacija: 8 primerov, ki se splačajo](https://aiprosolutions.si/blog/ai-avtomatizacija-primeri): konkretni procesi za avtomatizacijo in kako izbrati prvega
 - [Umetna inteligenca za mala in srednja podjetja](https://aiprosolutions.si/blog/umetna-inteligenca-za-mala-podjetja): vodnik za začetek, pogoste napake in prvi koraki
+- [GDPR in umetna inteligenca](https://aiprosolutions.si/blog/gdpr-in-umetna-inteligenca): vloge upravljavca in obdelovalca, pravna podlaga, minimizacija in prenos podatkov v ZDA
 
 ## Glavna stran
 
