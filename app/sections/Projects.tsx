@@ -68,8 +68,8 @@ const projects = [
   {
     id: "008",
     title: "AI Cenilec",
-    italic: "cenitev nepremičnin v minuti",
-    desc: "AI ocena vrednosti nepremičnine iz primerljivih prodaj (KNN nad bazo dejanskih transakcij) v kombinaciji s Claude vizualno analizo fotografij. Takojšnja informativna cenitev, brez čakanja na cenilca.",
+    italic: "Ocena vrednosti nepremičnin",
+    desc: "AI ocena tržne vrednosti nepremičnine na podlagi primerljivih prodaj iz baze dejanskih transakcij, dopolnjena z vizualno analizo fotografij. Uporabniku ponudi takojšnjo informativno oceno vrednosti.",
     stack: ["Next.js", "Supabase", "Claude API"],
     url: "https://ai-cenilec.si",
     accent: "rgba(251, 146, 60, 0.16)",
