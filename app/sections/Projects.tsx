@@ -59,8 +59,8 @@ const projects = [
   {
     id: "007",
     title: "AI Turizem",
-    italic: "nastanitve na avtopilotu",
-    desc: "AI plast nad rezervacijskim sistemom za nastanitve: samodejna komunikacija z gosti, dinamične cene glede na povpraševanje in zasedenost ter pametni upsell. Manj ročnega dela, več prihodka na rezervacijo.",
+    italic: "Avtomatizacija upravljanja nastanitev",
+    desc: "AI sistem nad rezervacijsko platformo za upravljanje nastanitev: samodejna komunikacija z gosti, dinamično oblikovanje cen glede na povpraševanje in zasedenost ter priporočila za dodatno ponudbo. Zmanjša obseg ročnega dela in poveča prihodek na posamezno rezervacijo.",
     stack: ["Python", "Playwright", "Claude API"],
     url: null,
     accent: "rgba(45, 212, 191, 0.16)",
