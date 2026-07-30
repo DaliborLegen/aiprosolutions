@@ -56,6 +56,24 @@ const projects = [
     url: "https://ai-racunovodstvo.com",
     accent: "rgba(16, 185, 129, 0.16)",
   },
+  {
+    id: "007",
+    title: "AI Turizem",
+    italic: "nastanitve na avtopilotu",
+    desc: "AI plast nad rezervacijskim sistemom za nastanitve: samodejna komunikacija z gosti, dinamične cene glede na povpraševanje in zasedenost ter pametni upsell. Manj ročnega dela, več prihodka na rezervacijo.",
+    stack: ["Python", "Playwright", "Claude API"],
+    url: null,
+    accent: "rgba(45, 212, 191, 0.16)",
+  },
+  {
+    id: "008",
+    title: "AI Cenilec",
+    italic: "cenitev nepremičnin v minuti",
+    desc: "AI ocena vrednosti nepremičnine iz primerljivih prodaj (KNN nad bazo dejanskih transakcij) v kombinaciji s Claude vizualno analizo fotografij. Takojšnja informativna cenitev, brez čakanja na cenilca.",
+    stack: ["Next.js", "Supabase", "Claude API"],
+    url: "https://ai-cenilec.si",
+    accent: "rgba(251, 146, 60, 0.16)",
+  },
 ];
 
 export default function Projects() {
