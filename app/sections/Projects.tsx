@@ -74,6 +74,15 @@ const projects = [
     url: "https://ai-cenilec.si",
     accent: "rgba(251, 146, 60, 0.16)",
   },
+  {
+    id: "009",
+    title: "Piran v žepu",
+    italic: "vse za obisk Pirana v eni appki",
+    desc: "Turistični marketplace za mobilne naprave (iOS + Android): nastanitve, restavracije, izleti in doživetja na enem mestu, z rezervacijami in provizijskim modelom. Mestni vodič, offline zemljevid, vreme in podpora za 4 jezike.",
+    stack: ["Expo", "React Native", "Supabase"],
+    url: null,
+    accent: "rgba(56, 189, 248, 0.16)",
+  },
 ];
 
 export default function Projects() {
