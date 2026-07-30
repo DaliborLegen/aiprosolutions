@@ -86,8 +86,8 @@ const projects = [
   {
     id: "010",
     title: "AI Agent",
-    italic: "celovit AI agent za stranko",
-    desc: "En AI agent, ki pokriva več funkcij hkrati: 24/7 podpora strankam v živo z eskalacijo na človeka, samodejno ustvarjanje in objavljanje vsebin na družbenih omrežjih, generiranje video in slikovnih oglasov ter zaščita blagovne znamke s samodejnim odkrivanjem lažnih oglasov in profilov.",
+    italic: "Celovita AI avtomatizacija poslovanja",
+    desc: "En AI agent, ki združuje več funkcij: neprekinjena (24/7) podpora strankam z možnostjo predaje človeku, samodejno ustvarjanje in objavljanje vsebin na družbenih omrežjih, izdelava video in slikovnih oglasov ter zaščita blagovne znamke s samodejnim odkrivanjem lažnih oglasov in profilov.",
     stack: ["Next.js 16", "Supabase", "Claude API"],
     url: "https://ai-agent.si",
     accent: "rgba(150, 120, 255, 0.16)",
