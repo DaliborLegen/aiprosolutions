@@ -92,6 +92,15 @@ const projects = [
     url: "https://ai-agent.si",
     accent: "rgba(150, 120, 255, 0.16)",
   },
+  {
+    id: "011",
+    title: "AI Nepremičnine",
+    italic: "CRM za nepremičninske agencije",
+    desc: "Zaledje za nepremičninsko agencijo z AI storitvami: skupen predal za spletni obrazec in elektronsko pošto s povzetki in osnutki odgovorov v jeziku stranke, samodejno ujemanje kupčevih meril z oglasi skupaj z razlogi, ocena vrednosti iz dejanskih prodaj, ter dokumenti s podpisom na daljavo. Vključuje javno stran agencije v treh jezikih.",
+    stack: ["Next.js 16", "Supabase", "Claude API"],
+    url: "https://piran-realestate.com",
+    accent: "rgba(201, 160, 80, 0.18)",
+  },
 ];
 
 export default function Projects() {
