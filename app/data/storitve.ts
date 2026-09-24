@@ -1,3 +1,5 @@
+import { storitve2 } from "./storitve-2";
+
 export type StoritevFaq = { q: string; a: string };
 
 export type Storitev = {
@@ -15,7 +17,7 @@ export type Storitev = {
   keywords: string[];
 };
 
-export const storitve: Storitev[] = [
+export const storitveCore: Storitev[] = [
   {
     slug: "umetna-inteligenca-za-podjetja",
     nav: "Umetna inteligenca za podjetja",
@@ -479,6 +481,8 @@ export const storitve: Storitev[] = [
     ],
   },
 ];
+
+export const storitve: Storitev[] = [...storitveCore, ...storitve2];
 
 export function getStoritev(slug: string): Storitev | undefined {
   return storitve.find((s) => s.slug === slug);
