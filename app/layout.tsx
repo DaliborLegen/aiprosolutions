@@ -176,6 +176,7 @@ const organizationJsonLd = {
     "https://formatory.si",
     "https://ai-racunovodstvo.com",
     "https://ai-cenilec.si",
+    "https://ai-arhitekt.si",
     "https://www.linkedin.com/in/dalibor-legen-83b4ab2b8",
     "https://github.com/DaliborLegen",
     "https://www.instagram.com/aiprosolutions_slovenija",

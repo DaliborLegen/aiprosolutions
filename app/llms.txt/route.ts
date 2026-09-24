@@ -72,6 +72,7 @@ ${storitveList}
 - [AI Agent](https://ai-agent.si): AI agencija in avtomatizacija družbenih omrežij
 - [AI Računovodstvo](https://ai-racunovodstvo.com): avtomatska obdelava prejetih računov
 - [AI Cenilec](https://ai-cenilec.si): AI cenitve nepremičnin
+- [AI Arhitekt](https://ai-arhitekt.si): kaj je na parceli sploh dovoljeno graditi, po prostorskih aktih
 
 ## Blog
 

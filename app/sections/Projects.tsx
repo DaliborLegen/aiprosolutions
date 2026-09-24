@@ -101,6 +101,15 @@ const projects = [
     url: "https://piran-realestate.com",
     accent: "rgba(201, 160, 80, 0.18)",
   },
+  {
+    id: "012",
+    title: "AI Arhitekt",
+    italic: "Kaj lahko zgradiš na svoji parceli",
+    desc: "Javni del odgovori lastniku parcele, kaj na njej sploh sme graditi: AI prebere prostorske akte in omejitve ter razloži pogoje v razumljivem jeziku, skupaj z imenikom arhitekturnih birojev. Zaledje je CRM za biroje z AI analizo lokacije in vodenjem povpraševanj.",
+    stack: ["Next.js 16", "Supabase", "Claude API"],
+    url: "https://ai-arhitekt.si",
+    accent: "rgba(129, 140, 248, 0.16)",
+  },
 ];
 
 export default function Projects() {

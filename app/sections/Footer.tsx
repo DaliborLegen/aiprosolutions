@@ -5,6 +5,7 @@ const products = [
   { label: "AI Agent", href: "https://ai-agent.si", note: "AI agencija" },
   { label: "AI Računovodstvo", href: "https://ai-racunovodstvo.com", note: "Avtomatizacija računov" },
   { label: "AI Cenilec", href: "https://ai-cenilec.si", note: "Cenitev nepremičnin" },
+  { label: "AI Arhitekt", href: "https://ai-arhitekt.si", note: "Kaj lahko zgradiš na parceli" },
 ];
 
 const nav = [
