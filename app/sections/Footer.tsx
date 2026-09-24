@@ -13,16 +13,25 @@ const nav = [
   { label: "proces", href: "/#proces" },
   { label: "delo", href: "/#projekti" },
   { label: "blog", href: "/blog" },
+  { label: "cene", href: "/cene" },
   { label: "vprasanja", href: "/#faq" },
   { label: "kontakt", href: "/#kontakt" },
 ];
 
 const storitveLinks = [
+  { label: "Vse storitve", href: "/storitve" },
+  { label: "Avtomatizacija poslovnih procesov", href: "/storitve/avtomatizacija-poslovnih-procesov" },
   { label: "Umetna inteligenca za podjetja", href: "/storitve/umetna-inteligenca-za-podjetja" },
   { label: "AI avtomatizacija", href: "/storitve/ai-avtomatizacija" },
   { label: "AI chatbot", href: "/storitve/ai-chatbot" },
+  { label: "Interni AI asistent", href: "/storitve/interni-ai-asistent" },
   { label: "AI agenti", href: "/storitve/ai-agenti" },
+  { label: "Avtomatizacija računovodstva", href: "/storitve/avtomatizacija-racunovodstva" },
+  { label: "Avtomatizacija kadrovskih procesov", href: "/storitve/avtomatizacija-kadrovskih-procesov" },
+  { label: "Poslovna inteligenca", href: "/storitve/poslovna-inteligenca" },
+  { label: "Izdelava spletnih aplikacij", href: "/storitve/izdelava-spletnih-aplikacij" },
   { label: "Izdelava spletnih strani", href: "/storitve/izdelava-spletnih-strani" },
+  { label: "AI video produkcija", href: "/storitve/ai-video-produkcija" },
   { label: "AI svetovanje", href: "/storitve/ai-svetovanje" },
 ];
 

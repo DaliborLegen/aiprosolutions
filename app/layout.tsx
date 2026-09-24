@@ -25,9 +25,10 @@ const jetbrainsMono = JetBrains_Mono({
 
 const SITE_URL = "https://aiprosolutions.si";
 const SITE_NAME = "AI PRO SOLUTIONS";
-const SITE_TITLE = "AI PRO SOLUTIONS — AI, razvoj in avtomatizacija za moderna podjetja";
+const SITE_TITLE =
+  "AI PRO SOLUTIONS: umetna inteligenca in avtomatizacija procesov za podjetja";
 const SITE_DESCRIPTION =
-  "Slovensko podjetje za napredne AI rešitve: chatboti, AI agenti, avtomatizacija procesov, razvoj spletnih aplikacij in digitalna transformacija. Od ideje do izvedbe.";
+  "Slovensko podjetje za AI rešitve in avtomatizacijo poslovnih procesov: AI chatboti in agenti, avtomatizacija administracije, računovodstva in kadrov, spletne aplikacije. Prva rešitev v produkciji v 2 do 3 tednih, od 1.500 €.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -38,21 +39,22 @@ export const metadata: Metadata = {
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   keywords: [
-    "AI agencija",
-    "umetna inteligenca",
-    "umetna inteligenca za podjetja",
-    "AI rešitve",
-    "AI agenti",
-    "AI chatbot",
-    "chatbot razvoj",
-    "AI avtomatizacija",
-    "avtomatizacija procesov",
     "avtomatizacija poslovnih procesov",
-    "AI svetovanje",
-    "razvoj spletnih aplikacij",
+    "avtomatizacija procesov",
+    "avtomatizacija poslovanja",
+    "AI avtomatizacija",
+    "umetna inteligenca za podjetja",
+    "AI rešitve za podjetja",
+    "AI agencija",
+    "AI agenti",
+    "AI chatbot za podjetja",
+    "interni chatbot",
+    "avtomatizirano računovodstvo",
+    "poslovna inteligenca",
+    "izdelava spletnih aplikacij",
     "izdelava spletnih strani",
-    "digitalna transformacija",
-    "Next.js razvoj",
+    "AI svetovanje",
+    "AI video za podjetja",
     "Slovenija",
   ],
   authors: [{ name: "AI PRO SOLUTIONS d.o.o." }],
@@ -88,21 +90,95 @@ export const metadata: Metadata = {
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ProfessionalService"],
+  "@id": `${SITE_URL}/#organization`,
   name: "AI PRO SOLUTIONS d.o.o.",
+  alternateName: ["AI PRO SOLUTIONS", "AIProSolutions"],
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
+  image: `${SITE_URL}/logo.png`,
   description: SITE_DESCRIPTION,
   email: "info@aiprosolutions.si",
+  telephone: "+386 40 223 883",
+  vatID: "SI84674423",
+  taxID: "84674423",
   address: {
     "@type": "PostalAddress",
+    streetAddress: "Ulica Svobode 65",
+    postalCode: "6330",
+    addressLocality: "Piran",
+    addressRegion: "Obalno-kraška",
     addressCountry: "SI",
   },
+  areaServed: [
+    { "@type": "Country", name: "Slovenija" },
+    { "@type": "Place", name: "Evropska unija" },
+  ],
+  knowsLanguage: ["sl", "en"],
+  knowsAbout: [
+    "avtomatizacija poslovnih procesov",
+    "umetna inteligenca v podjetjih",
+    "AI chatboti in AI agenti",
+    "obdelava dokumentov in računov z umetno inteligenco",
+    "poslovna inteligenca in analitika",
+    "razvoj spletnih strani in aplikacij",
+    "GDPR pri uporabi umetne inteligence",
+  ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      email: "info@aiprosolutions.si",
+      telephone: "+386 40 223 883",
+      availableLanguage: ["Slovenian", "English"],
+      areaServed: "EU",
+    },
+  ],
+  makesOffer: [
+    {
+      "@type": "Offer",
+      name: "AI chatbot za podporo strankam",
+      url: `${SITE_URL}/storitve/ai-chatbot`,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: 1500,
+        priceCurrency: "EUR",
+        valueAddedTaxIncluded: false,
+      },
+    },
+    {
+      "@type": "Offer",
+      name: "Avtomatizacija poslovnega procesa",
+      url: `${SITE_URL}/storitve/avtomatizacija-poslovnih-procesov`,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: 1500,
+        priceCurrency: "EUR",
+        valueAddedTaxIncluded: false,
+      },
+    },
+    {
+      "@type": "Offer",
+      name: "AI agent z integracijami",
+      url: `${SITE_URL}/storitve/ai-agenti`,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: 4000,
+        priceCurrency: "EUR",
+        valueAddedTaxIncluded: false,
+      },
+    },
+  ],
   sameAs: [
     "https://ai-agent.si",
     "https://revivio.si",
     "https://profipix.si",
     "https://formatory.si",
+    "https://ai-racunovodstvo.com",
+    "https://ai-cenilec.si",
+    "https://www.linkedin.com/in/dalibor-legen-83b4ab2b8",
+    "https://github.com/DaliborLegen",
+    "https://www.instagram.com/aiprosolutions_slovenija",
   ],
 };
 

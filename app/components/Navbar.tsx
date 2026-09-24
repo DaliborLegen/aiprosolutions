@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { href: "/#storitve", label: "storitve", num: "01" },
-  { href: "/#zakaj", label: "studio", num: "02" },
+  { href: "/storitve", label: "storitve", num: "01" },
+  { href: "/cene", label: "cene", num: "02" },
   { href: "/#proces", label: "proces", num: "03" },
   { href: "/#projekti", label: "delo", num: "04" },
   { href: "/blog", label: "blog", num: "05" },
