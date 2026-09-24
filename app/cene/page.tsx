@@ -58,7 +58,7 @@ export default function CenePage() {
           minPrice: p.od,
           priceCurrency: "EUR",
           valueAddedTaxIncluded: false,
-ሴ      },
+        },
         ...(p.href ? { url: `${SITE_URL}${p.href}` } : {}),
       })),
     },
