@@ -30,6 +30,7 @@ const services: Service[] = [
     sub: "po meri, brez šablon",
     desc: "Aplikacije, interna orodja in API integracije za specifične poslovne potrebe. Od CRM-jev do produkcijskih dashboardov, vedno z mislijo na uporabnika in vzdržljivost kode.",
     keywords: ["TypeScript", "Postgres", "API", "Realtime"],
+    href: "/storitve/izdelava-spletnih-aplikacij",
   },
   {
     num: "03",
@@ -47,7 +48,7 @@ const services: Service[] = [
     sub: "manj klikov, več rezultatov",
     desc: "Povezujemo vaše sisteme, odstranjujemo ročne korake in postavimo avtomatske delovne tokove. Kjer je smiselno, dodamo AI v zanko, da naredi odločitve namesto človeka.",
     keywords: ["Workflows", "Webhooks", "ETL", "n8n"],
-    href: "/storitve/ai-avtomatizacija",
+    href: "/storitve/avtomatizacija-poslovnih-procesov",
   },
   {
     num: "05",
@@ -65,6 +66,7 @@ const services: Service[] = [
     sub: "od scenarija do mastera",
     desc: "Generativna produkcija video in avdio vsebin za marketing in produktno komunikacijo. Konsistenten brand glas, hitra iteracija, profesionalen output.",
     keywords: ["Veo", "Suno", "ElevenLabs", "Remotion"],
+    href: "/storitve/ai-video-produkcija",
   },
 ];
 

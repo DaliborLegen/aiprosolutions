@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-const eur = (n: number) => n.toLocaleString("sl-SI");
+const eur = (n: number) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 export default function CenePage() {
   const jsonLd = [

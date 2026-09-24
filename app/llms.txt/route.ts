@@ -6,6 +6,9 @@ const SITE_URL = "https://aiprosolutions.si";
 
 export const dynamic = "force-static";
 
+const eur = (n: number) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+
 // llms.txt je kazalo za jezikovne modele in AI iskalnike: kratka, dejstvena
 // predstavitev podjetja s povezavami. Generira se iz istih podatkov kot strani,
 // da se navedbe ne razhajajo.
@@ -15,7 +18,7 @@ export function GET() {
     .join("\n");
 
   const cenikList = cenik
-    .map((p) => `- ${p.ime}: od ${p.od.toLocaleString("sl-SI")} € na ${p.enota}`)
+    .map((p) => `- ${p.ime}: od ${eur(p.od)} € na ${p.enota}`)
     .join("\n");
 
   const blogList = articles

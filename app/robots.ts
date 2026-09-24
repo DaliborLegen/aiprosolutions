@@ -18,6 +18,16 @@ const aiBots = [
   "DuckAssistBot",
   "MistralAI-User",
   "YouBot",
+  "Amazonbot",
+  "Applebot",
+  "Diffbot",
+  "Timpibot",
+  "Webzio-Extended",
+  "AI2Bot",
+  "Firecrawl",
+  "Claude-SearchBot",
+  "Claude-User",
+  "Gemini-Deep-Research",
 ];
 
 export default function robots(): MetadataRoute.Robots {

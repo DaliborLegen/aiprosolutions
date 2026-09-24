@@ -7,6 +7,9 @@ const SITE_URL = "https://aiprosolutions.si";
 
 export const dynamic = "force-static";
 
+const eur = (n: number) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+
 // llms-full.txt vsebuje celotno besedilo strani v enem dokumentu, da jezikovni
 // model ali AI iskalnik dobi vso vsebino brez obiskovanja posameznih strani.
 export function GET() {
@@ -31,7 +34,7 @@ Delo poteka pretežno na daljavo, s strankami po vsej Sloveniji in v Evropski un
   parts.push(`## Cenik (brez DDV)\n`);
   for (const p of cenik) {
     parts.push(
-      `### ${p.ime}: od ${p.od.toLocaleString("sl-SI")} € na ${p.enota}\n\n${p.opis}\n\nVključeno: ${p.vkljuceno.join("; ")}.\n`
+      `### ${p.ime}: od ${eur(p.od)} € na ${p.enota}\n\n${p.opis}\n\nVključeno: ${p.vkljuceno.join("; ")}.\n`
     );
   }
   parts.push(`### Pogosta vprašanja o cenah\n`);
