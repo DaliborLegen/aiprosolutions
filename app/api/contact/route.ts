@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, message } = await req.json();
+    const { name, company, email, message } = await req.json();
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Vsa polja so obvezna" }, { status: 400 });
@@ -21,6 +21,7 @@ export async function POST(req: NextRequest) {
         html: `
           <h2>Novo povpraševanje — AI Pro Solutions</h2>
           <p><strong>Ime:</strong> ${name}</p>
+          <p><strong>Podjetje:</strong> ${company || "-"}</p>
           <p><strong>E-pošta:</strong> ${email}</p>
           <p><strong>Sporočilo:</strong></p>
           <p>${message.replace(/\n/g, "<br>")}</p>
