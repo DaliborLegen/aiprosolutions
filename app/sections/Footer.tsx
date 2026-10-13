@@ -1,3 +1,5 @@
+import { CookieSettingsButton } from "../components/CookieConsent";
+
 const products = [
   { label: "Revivio", href: "https://revivio.si", note: "AI obnova fotografij" },
   { label: "ProfiPix", href: "https://profipix.si", note: "AI fotografije nastanitev" },
@@ -155,7 +157,10 @@ export default function Footer() {
             <span className="dot-signal" />
             © 2026 AI PRO Solutions d.o.o.
           </span>
-          <span className="hidden sm:inline">all systems operational</span>
+          <span className="flex items-center gap-4">
+            <a href="/zasebnost" className="hover:text-accent transition-colors">zasebnost</a>
+            <CookieSettingsButton className="uppercase tracking-[0.18em] hover:text-accent transition-colors cursor-pointer" />
+          </span>
           <span>build_001 / SI</span>
         </div>
       </div>

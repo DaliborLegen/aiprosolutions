@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Geist, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { faqItems } from "./data/faq";
-import GoogleAnalytics from "./components/GoogleAnalytics";
+import CookieConsent from "./components/CookieConsent";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin", "latin-ext"],
@@ -266,7 +266,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdGraph) }}
         />
-        <GoogleAnalytics />
+        <CookieConsent />
       </body>
     </html>
   );

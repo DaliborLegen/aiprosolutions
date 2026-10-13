@@ -21,8 +21,9 @@ export default function ZasebnostPage() {
     <>
       <Background />
       <SystemBar />
+      <main className="relative z-10">
       <Navbar />
-      <main className="relative max-w-[820px] mx-auto px-4 lg:px-8 pt-32 pb-24 text-[16px] leading-relaxed text-text-2">
+      <div className="max-w-[820px] mx-auto px-4 lg:px-8 pt-32 pb-24 text-[16px] leading-relaxed text-text-2">
         <p className="mono text-[10px] uppercase tracking-[0.2em] text-text-3 mb-4">
           <span className="text-accent">&gt;</span> pravno
         </p>
@@ -77,8 +78,9 @@ export default function ZasebnostPage() {
           Če menite, da podatke obdelujemo nezakonito, se lahko pritožite pri Informacijskem pooblaščencu
           (Dunajska cesta 22, 1000 Ljubljana, <a className="text-accent" href="https://www.ip-rs.si" target="_blank" rel="noopener noreferrer">www.ip-rs.si</a>).
         </p>
-      </main>
+      </div>
       <Footer />
+      </main>
     </>
   );
 }
