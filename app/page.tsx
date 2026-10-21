@@ -11,6 +11,7 @@ import CTA from "./sections/CTA";
 import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import { servicesJsonLd, faqJsonLd } from "./data/jsonld-domov";
 
 export default function Home() {
   return (
@@ -30,6 +31,10 @@ export default function Home() {
         <Contact />
         <Footer />
       </main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([...servicesJsonLd, faqJsonLd]) }}
+      />
     </>
   );
 }
