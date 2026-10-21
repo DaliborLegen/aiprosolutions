@@ -219,6 +219,15 @@ export default async function StoritevPage({
               <span>sorodne_storitve</span>
             </p>
             <div className="flex flex-wrap gap-3 mb-16">
+              {s.related?.map((r) => (
+                <Link
+                  key={r.href}
+                  href={r.href}
+                  className="mono text-[11px] uppercase tracking-[0.14em] text-accent border border-accent px-4 py-2.5 hover:bg-accent hover:text-void transition-colors"
+                >
+                  {r.label}
+                </Link>
+              ))}
               {ostale.map((o) => (
                 <Link
                   key={o.slug}

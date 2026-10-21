@@ -601,4 +601,109 @@ export const storitve2: Storitev[] = [
       "video za družbena omrežja",
     ],
   },
+  {
+    slug: "seo-optimizacija",
+    nav: "SEO optimizacija",
+    metaTitle: "SEO optimizacija spletnih strani: cena in kaj vključuje",
+    metaDescription:
+      "SEO optimizacija spletne strani za Google in AI iskalnike (ChatGPT, Gemini): tehnični pregled, naslovi, strukturirani podatki, vsebine. Analiza od 290 €, ureditev od 690 €.",
+    h1a: "SEO optimizacija",
+    h1b: "za Google in ChatGPT.",
+    intro:
+      "SEO optimizacija je urejanje spletne strani, da jo iskalniki najdejo, razumejo in pokažejo ljudem, ki iščejo vašo storitev. Danes to ni več samo Google: vse več strank vpraša ChatGPT, Gemini ali Perplexity. Optimiziramo za oboje, z merljivim izhodiščem in fiksno ceno.",
+    bullets: [
+      {
+        t: "Tehnični pregled",
+        d: "Hitrost, indeksiranje, robots.txt, sitemap, preusmeritve, podvojene strani in dostop za AI robote. Najprej odpravimo, kar iskalnikom zapira vrata.",
+      },
+      {
+        t: "Naslovi, opisi in struktura",
+        d: "Vsaka stran dobi svoj naslov, opis in H1 s pravimi ključnimi besedami. Slike dobijo alt besedila, jezikovne različice oznake hreflang.",
+      },
+      {
+        t: "Strukturirani podatki",
+        d: "Podatki o podjetju, lokaciji, storitvah, cenah in pogostih vprašanjih v obliki schema.org, ki jo Google in AI iskalniki preberejo brez ugibanja.",
+      },
+      {
+        t: "Vsebine, ki odgovarjajo",
+        d: "Strani in članki za vprašanja, ki jih stranke dejansko vpisujejo. Izhajamo iz podatkov v Search Console, ne iz ugibanja.",
+      },
+    ],
+    body: [
+      {
+        h: "Koliko stane SEO optimizacija",
+        p: [
+          "Cena SEO optimizacije je odvisna od velikosti strani in od tega, koliko je treba popraviti. Pri nas začnete z analizo vidnosti od 290 €, ki pokaže stanje v Googlu in v AI iskalnikih ter seznam popravkov po pomembnosti. Tehnična ureditev strani se začne pri 690 €, znesek analize pa pri tem odštejemo.",
+          "Za stalno rast je na voljo mesečno spremljanje od 290 € na mesec: nove vsebine, meritev uvrstitev in omemb v ChatGPT, Gemini in Perplexity ter poročilo s številkami iz Search Console. Vezave ni, odpoved velja do konca meseca.",
+        ],
+      },
+      {
+        h: "SEO in GEO: optimizacija za AI iskalnike",
+        p: [
+          "GEO (generative engine optimization) je optimizacija za iskalnike, ki odgovor sestavijo sami, kot so ChatGPT, Gemini, Perplexity in Googlov AI pregled. Osnova je enaka kot pri SEO, dodatno pa je treba zagotoviti, da roboti teh iskalnikov sploh dobijo besedilo strani. Mnoge sodobne strani jim pokažejo prazno ogrodje, ker se vsebina izriše šele z JavaScriptom.",
+          "Zato pri vsaki SEO optimizaciji stran preverimo tudi kot GPTBot, OAI-SearchBot, ClaudeBot in PerplexityBot. Podrobneje o tem na strani o vidnosti v AI iskalnikih.",
+        ],
+      },
+      {
+        h: "WordPress, Wix in strani po meri",
+        p: [
+          "SEO optimizacijo izvajamo na WordPressu (Yoast, Rank Math), Wixu, Shopifyju in na straneh po meri, zgrajenih v Next.js ali Reactu. Če stran vzdržuje drug izvajalec, mu pripravimo natančna navodila, kaj in kje spremeniti.",
+          "Pri straneh, ki jih izdelamo sami, je tehnična SEO osnova del izdelave: hitro nalaganje, strukturirani podatki, sitemap, llms.txt in dostop za AI robote.",
+        ],
+      },
+      {
+        h: "Kdaj pričakovati rezultate",
+        p: [
+          "Tehnični popravki začnejo delovati, ko iskalnik stran ponovno obišče, kar je pri večini strani v nekaj dneh do nekaj tednov. Premik uvrstitev za konkurenčne besede je tipično viden po enem do treh mesecih, pri lokalnih poizvedbah (storitev in kraj) pogosto prej.",
+          "Prvega mesta ne obljubljamo, ker ga nihče ne more pošteno zagotoviti. Obljubimo pa meritev pred začetkom in po vsakem mesecu, da je napredek viden v številkah.",
+        ],
+      },
+    ],
+    useCases: [
+      "SEO optimizacija spletne strani za Google",
+      "SEO optimizacija za ChatGPT in druge AI iskalnike",
+      "SEO optimizacija WordPress strani",
+      "SEO optimizacija spletne trgovine",
+      "Lokalni SEO in Google Business Profile",
+      "SEO optimizacija besedil in podstrani",
+    ],
+    faq: [
+      {
+        q: "Kaj pomeni SEO?",
+        a: "SEO (search engine optimization) pomeni optimizacijo za iskalnike: urejanje tehnike, vsebine in strukture spletne strani, da jo Google in drugi iskalniki uvrstijo čim višje za iskalne besede, s katerimi vas iščejo stranke.",
+      },
+      {
+        q: "Koliko stane SEO optimizacija?",
+        a: "Pri AI PRO SOLUTIONS se SEO optimizacija začne z analizo vidnosti od 290 €. Tehnična ureditev strani stane od 690 € (znesek analize odštejemo), mesečno spremljanje z novimi vsebinami pa od 290 € na mesec brez vezave.",
+      },
+      {
+        q: "Kaj je razlika med SEO in GEO optimizacijo?",
+        a: "SEO cilja uvrstitve v klasičnih rezultatih Googla. GEO cilja omembe v odgovorih AI iskalnikov, kot so ChatGPT, Gemini in Perplexity. Večina dela se prekriva, GEO pa dodatno zahteva, da AI roboti dobijo celotno besedilo strani in da so podatki o podjetju strukturirani.",
+      },
+      {
+        q: "Ali SEO optimizacijo izvajate tudi za WordPress?",
+        a: "Da. Optimiziramo WordPress, Wix, Shopify in strani po meri. Na WordPressu uredimo nastavitve vtičnikov Yoast ali Rank Math, strukturirane podatke, sitemap in robots.txt.",
+      },
+      {
+        q: "Kako hitro bom višje v Googlu?",
+        a: "Tehnični popravki delujejo v nekaj dneh do tednov. Vidnejši premiki uvrstitev so tipično po enem do treh mesecih, odvisno od konkurence za posamezno besedo.",
+      },
+    ],
+    keywords: [
+      "seo optimizacija",
+      "seo optimizacija cena",
+      "cena seo optimizacije",
+      "seo optimizacija spletnih strani",
+      "seo optimizacija spletne strani",
+      "seo optimizacija za google",
+      "seo optimizacija wordpress",
+      "seo optimizacija slovenija",
+      "kaj pomeni seo",
+      "geo optimizacija",
+    ],
+    related: [
+      { label: "Vidnost v AI iskalnikih (GEO)", href: "/ai-vidnost" },
+      { label: "Članek: SEO optimizacija za ChatGPT", href: "/blog/seo-optimizacija-za-chatgpt" },
+    ],
+  },
 ];

@@ -15,6 +15,7 @@ export type Storitev = {
   useCases: string[];
   faq: StoritevFaq[];
   keywords: string[];
+  related?: { label: string; href: string }[];
 };
 
 export const storitveCore: Storitev[] = [
