@@ -25,6 +25,108 @@ export type Article = {
 
 export const articles: Article[] = [
   {
+    slug: "seo-optimizacija-za-chatgpt",
+    title: "SEO optimizacija za ChatGPT: kako priti v odgovore AI iskalnikov",
+    metaTitle: "SEO optimizacija za ChatGPT: vodnik za GEO optimizacijo 2026",
+    metaDescription:
+      "Kako doseči, da vas ChatGPT, Gemini in Perplexity omenijo: kaj je GEO optimizacija, zakaj AI roboti pogosto ne vidijo strani, robots.txt, llms.txt, strukturirani podatki.",
+    excerpt:
+      "Kaj je GEO optimizacija, zakaj ChatGPT vaše strani morda sploh ne prebere in sedem korakov, s katerimi podjetje pride v odgovore AI iskalnikov.",
+    date: "2026-10-21",
+    dateLabel: "21. oktober 2026",
+    readMin: 8,
+    category: "SEO in AI vidnost",
+    keywords: [
+      "seo optimizacija za chatgpt",
+      "optimizacija za chatgpt",
+      "geo optimizacija",
+      "kaj je geo optimizacija",
+      "ai seo",
+      "optimizacija za ai iskalnike",
+      "llms.txt",
+      "kako se pojaviti v chatgpt",
+    ],
+    related: [
+      { label: "AI vidnost (GEO)", href: "/ai-vidnost" },
+      { label: "SEO optimizacija", href: "/storitve/seo-optimizacija" },
+    ],
+    blocks: [
+      {
+        t: "p",
+        c: "Ko nekdo ChatGPT vpraša, kateri avtoservis v Kopru je dober ali kje prespati v Piranu, dobi tri ali štiri imena. Na spletno stran klikne redko, odloči se kar iz odgovora. Za podjetje to pomeni novo vprašanje: ali sem med temi imeni? SEO optimizacija za ChatGPT, ki ji pravimo tudi GEO optimizacija, je odgovor na to vprašanje.",
+      },
+      { t: "h2", c: "Kaj je GEO optimizacija" },
+      {
+        t: "p",
+        c: "GEO (generative engine optimization) je urejanje spletne strani in vsebin tako, da jih generativni iskalniki najdejo, razumejo in navedejo v odgovorih. Mednje sodijo ChatGPT s spletnim iskanjem, Gemini, Perplexity, Claude, Microsoft Copilot in Googlov AI pregled nad rezultati. Ponekod se uporablja tudi izraz AEO (answer engine optimization), ki pomeni skoraj isto.",
+      },
+      {
+        t: "p",
+        c: "Klasični SEO ostaja temelj. AI iskalniki pogosto izhajajo iz istih virov kot Google in Bing, zato stran, ki je v Googlu nevidna, redko pride v AI odgovor. Obstajajo pa razlike, zaradi katerih je lahko podjetje v Googlu prvo, v ChatGPT pa ga ni.",
+      },
+      { t: "h2", c: "Zakaj ChatGPT vaše strani morda sploh ne vidi" },
+      {
+        t: "p",
+        c: "Google stran izriše skoraj tako kot brskalnik, vključno z JavaScriptom. Roboti AI iskalnikov (OAI-SearchBot in ChatGPT-User za ChatGPT, PerplexityBot, Claude-SearchBot) večinoma preberejo samo HTML, ki ga strežnik vrne takoj. Če je stran zgrajena tako, da se vsebina naloži šele v brskalniku, robot dobi prazno ogrodje.",
+      },
+      {
+        t: "p",
+        c: "Pri pregledih slovenskih strani smo to videli večkrat. Na eni od večjih strani je Googlebot dobil celotno vsebino prek storitve za predhodno upodabljanje, vsi AI roboti pa le okoli 7 KB ogrodja brez besedila. ChatGPT je na vprašanje o ponudbi odgovoril, da uradna stran ni dostopna, in podatke povzel po portalih tretjih oseb.",
+      },
+      {
+        t: "p",
+        c: "Drugi pogost vzrok je požarni zid. Cloudflare in podobne storitve imajo nastavitev za blokado AI robotov, ki jo marsikdo vklopi, ne da bi vedel, da s tem zapre vrata tudi iskalnim robotom, ne samo tistim za učenje modelov.",
+      },
+      { t: "h2", c: "Sedem korakov do odgovorov AI iskalnikov" },
+      {
+        t: "ol",
+        items: [
+          "Preverite, kaj vidijo roboti. Stran naložite z različnimi user-agenti (GPTBot, OAI-SearchBot, PerplexityBot, ClaudeBot) in primerjajte količino besedila z brskalnikom. Če je razlika velika, je to prva stvar za popravek.",
+          "Uredite robots.txt. Iskalnim robotom (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Googlebot, Bingbot) dovolite dostop. Robote za učenje modelov (GPTBot, ClaudeBot, Google-Extended) lahko zaprete, če tako želite; na iskanje to ne vpliva.",
+          "Dodajte llms.txt. To je kratka besedilna datoteka v korenu strani z opisom podjetja, storitev, cen in kontakta. Standard je nov in ga ne upoštevajo vsi, a ga je enostavno dodati in pomaga orodjem, ki ga berejo.",
+          "Zapišite podatke o podjetju strukturirano. JSON-LD s tipom Organization ali LocalBusiness: naslov, telefon, delovni čas, storitve, cene, območje delovanja. Ko so podatki zapisani nedvoumno, AI redkeje navaja napačne ure ali stare cene.",
+          "Odgovorite na vprašanja, ki jih stranke dejansko postavljajo. Strani in članke, ki v prvem stavku neposredno odgovorijo na vprašanje, AI iskalniki povzamejo pogosteje kot splošne predstavitve.",
+          "Bodite prisotni tudi drugje. AI odgovor sestavi iz več virov: Google Business Profile, imeniki, novice, ocene, LinkedIn. Pravilni in usklajeni podatki na teh mestih štejejo skoraj toliko kot lastna stran.",
+          "Merite. Vsak mesec v začasnem klepetu postavite ista vprašanja ChatGPT, Gemini in Perplexity ter zapišite, ali vas omenijo in iz katerega vira. Brez meritve ne veste, ali kaj od naštetega deluje.",
+        ],
+      },
+      { t: "h2", c: "Česa GEO optimizacija ne more zagotoviti" },
+      {
+        t: "p",
+        c: "Odgovori AI iskalnikov se razlikujejo od vprašanja do vprašanja in od tedna do tedna. Kdor obljublja zagotovljeno mesto v ChatGPT, obljublja nekaj, česar ne more nadzorovati. Realno je zagotoviti, da AI vašo stran lahko prebere, da so podatki o vas pravilni in dosegljivi ter da se delež omemb skozi mesece meri.",
+      },
+      { t: "h2", c: "Kako začeti" },
+      {
+        t: "p",
+        c: "Najhitrejši prvi korak vzame dve minuti: v začasnem klepetu vprašajte ChatGPT in Gemini, kot bi vprašala vaša stranka, in poglejte rezultat. Če vas ni, ali pa vas omenita z napačnimi podatki, je čas za pregled.",
+      },
+      {
+        t: "cta",
+        c: "Naredimo analizo vidnosti vaše strani v ChatGPT, Gemini, Perplexity in Googlu, s seznamom popravkov po pomembnosti. Od 290 €, poročilo v treh delovnih dneh.",
+        href: "/ai-vidnost",
+        label: "Analiza vidnosti",
+      },
+    ],
+    faq: [
+      {
+        q: "Kaj je SEO optimizacija za ChatGPT?",
+        a: "SEO optimizacija za ChatGPT, imenovana tudi GEO optimizacija, je urejanje spletne strani in vsebin tako, da jih ChatGPT in drugi AI iskalniki najdejo, preberejo in navedejo v odgovorih. Poleg klasičnega SEO vključuje dostop za AI robote, strukturirane podatke in vsebine, ki neposredno odgovarjajo na vprašanja strank.",
+      },
+      {
+        q: "Ali ChatGPT bere mojo spletno stran?",
+        a: "ChatGPT pri spletnem iskanju stran obišče z roboti OAI-SearchBot in ChatGPT-User. Prebere jo le, če je ne blokirata robots.txt ali požarni zid in če strežnik vrne besedilo v HTML. Strani, ki vsebino izrišejo šele z JavaScriptom, ChatGPT pogosto vidi prazne.",
+      },
+      {
+        q: "Kaj je llms.txt?",
+        a: "llms.txt je besedilna datoteka v korenu spletne strani (npr. stran.si/llms.txt) s kratkim povzetkom podjetja, storitev in povezav, namenjena jezikovnim modelom. Gre za predlagan standard, ki ga podpirajo nekatera orodja. Dodati ga je preprosto in ne škodi.",
+      },
+      {
+        q: "Koliko stane GEO optimizacija?",
+        a: "Pri AI PRO SOLUTIONS se začne z analizo vidnosti od 290 €. Tehnična ureditev za AI iskalnike in Google stane od 690 €, mesečno spremljanje z novimi vsebinami pa od 290 € na mesec brez vezave.",
+      },
+    ],
+  },
+  {
     slug: "koliko-stane-ai-chatbot",
     title: "Koliko stane AI chatbot za podjetje leta 2026?",
     metaTitle: "Koliko stane AI chatbot za podjetje? Cene 2026",
