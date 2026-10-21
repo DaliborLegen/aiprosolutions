@@ -60,6 +60,10 @@ ${cenikList}
 
 ${storitveList}
 
+## Vidnost v AI iskalnikih
+
+- [AI vidnost](${SITE_URL}/ai-vidnost): analiza in ureditev spletne strani, da jo ChatGPT, Gemini, Perplexity in Google najdejo in navedejo (GEO in SEO). Analiza od 290 €, ureditev od 690 €, mesečno spremljanje od 290 €.
+
 ## V angleščini
 
 - [AI consulting in Slovenia](${SITE_URL}/ai-consulting-slovenia): English overview of consulting, conversational AI and automation services.
