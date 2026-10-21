@@ -7,6 +7,53 @@ export type CenikPostavka = {
   href?: string;
 };
 
+// Paketi za vidnost v AI iskalnikih in Googlu. Prikazani so na /ai-vidnost
+// in vključeni v skupni cenik spodaj.
+export const aiVidnostPaketi: CenikPostavka[] = [
+  {
+    ime: "Analiza vidnosti v AI iskalnikih",
+    od: 290,
+    enota: "analiza",
+    opis:
+      "Pisno poročilo o tem, kako vas vidijo ChatGPT, Gemini, Perplexity in Google, s seznamom popravkov po prednosti. Znesek odštejemo od ureditve.",
+    vkljuceno: [
+      "Tehnični pregled dostopa za AI crawlerje",
+      "10 vprašanj iz vaše panoge v treh AI iskalnikih",
+      "Uvrstitve v Googlu za ključne poizvedbe",
+      "Seznam popravkov po vrstnem redu učinka",
+    ],
+    href: "/ai-vidnost",
+  },
+  {
+    ime: "Tehnična ureditev za AI in Google",
+    od: 690,
+    enota: "projekt",
+    opis:
+      "Odpravimo, kar je analiza našla: dostop za crawlerje, strukturirani podatki, naslovi, opisi in prijava v Search Console.",
+    vkljuceno: [
+      "robots.txt, sitemap in llms.txt",
+      "Strukturirani podatki (podjetje, lokacija, storitve, FAQ)",
+      "Naslovi, opisi, H1 in alt besedila slik",
+      "Google Search Console in Bing Webmaster Tools",
+    ],
+    href: "/ai-vidnost",
+  },
+  {
+    ime: "Mesečno spremljanje vidnosti",
+    od: 290,
+    enota: "mesec",
+    opis:
+      "Vsak mesec izmerimo, ali vas AI iskalniki omenjajo, pripravimo nove vsebine in poročilo s številkami iz Search Console.",
+    vkljuceno: [
+      "Mesečna meritev v ChatGPT, Gemini in Perplexity",
+      "2 vsebini na mesec (članek ali FAQ stran)",
+      "Poročilo iz Search Console in Analytics",
+      "Brez vezave, odpoved do konca meseca",
+    ],
+    href: "/ai-vidnost",
+  },
+];
+
 // En sam vir resnice za cene. Uporablja ga stran /cene, strukturirani podatki
 // in llms.txt, da se navedbe med seboj ne razhajajo.
 export const cenik: CenikPostavka[] = [
@@ -136,6 +183,7 @@ export const cenik: CenikPostavka[] = [
     ],
     href: "/storitve/ai-svetovanje",
   },
+  ...aiVidnostPaketi,
   {
     ime: "Mesečno vzdrževanje in podpora",
     od: 90,
