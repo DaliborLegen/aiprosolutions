@@ -23,7 +23,8 @@ const nav = [
 
 const storitveLinks = [
   { label: "Vse storitve", href: "/storitve" },
-  { label: "AI vidnost (SEO za ChatGPT)", href: "/ai-vidnost" },
+  { label: "SEO optimizacija za ChatGPT (GEO)", href: "/ai-vidnost" },
+  { label: "SEO optimizacija", href: "/storitve/seo-optimizacija" },
   { label: "Avtomatizacija poslovnih procesov", href: "/storitve/avtomatizacija-poslovnih-procesov" },
   { label: "Umetna inteligenca za podjetja", href: "/storitve/umetna-inteligenca-za-podjetja" },
   { label: "AI avtomatizacija", href: "/storitve/ai-avtomatizacija" },

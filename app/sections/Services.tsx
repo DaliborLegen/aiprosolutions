@@ -68,6 +68,15 @@ const services: Service[] = [
     keywords: ["Veo", "Suno", "ElevenLabs", "Remotion"],
     href: "/storitve/ai-video-produkcija",
   },
+  {
+    num: "07",
+    cmd: "seo_geo",
+    title: "SEO in vidnost v AI iskalnikih",
+    sub: "Google, ChatGPT, Gemini, Perplexity",
+    desc: "SEO optimizacija za Google in GEO optimizacija za ChatGPT. Preverimo, kaj o vas vidijo iskalniki in AI roboti, uredimo tehniko, strukturirane podatke in vsebine ter vsak mesec izmerimo napredek.",
+    keywords: ["SEO", "GEO", "Schema.org", "llms.txt"],
+    href: "/ai-vidnost",
+  },
 ];
 
 export default function Services() {

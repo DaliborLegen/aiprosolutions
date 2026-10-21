@@ -8,17 +8,22 @@ import { aiVidnostPaketi } from "../data/cenik";
 
 const SITE_URL = "https://aiprosolutions.si";
 
-const TITLE = "AI vidnost: SEO optimizacija za ChatGPT, Gemini in Google";
+const TITLE = "SEO optimizacija za ChatGPT in GEO optimizacija";
 const DESCRIPTION =
-  "Preverimo, ali vas ChatGPT, Gemini in Perplexity priporočijo, ko stranke iščejo vašo storitev, in uredimo stran, da vas najdejo. Analiza vidnosti od 290 €.";
+  "SEO in GEO optimizacija za ChatGPT, Gemini, Perplexity in Google. Preverimo, ali vas AI iskalniki priporočijo, in uredimo stran. Analiza vidnosti od 290 €.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
     "seo optimizacija za chatgpt",
-    "optimizacija za ai iskalnike",
+    "optimizacija za chatgpt",
     "geo optimizacija",
+    "kaj je geo optimizacija",
+    "geo optimizacija cene",
+    "aeo",
+    "optimizacija za ai iskalnike",
+    "ai vidnost",
     "generative engine optimization",
     "ai seo",
     "seo optimizacija",
@@ -78,6 +83,10 @@ const faq = [
     a: "GEO ali generative engine optimization je urejanje spletne strani in vsebin tako, da jih ChatGPT, Gemini, Perplexity in podobna orodja najdejo, razumejo in navedejo v odgovorih. Osnova je enaka kot pri SEO, dodatno pa je treba poskrbeti, da AI crawlerji dobijo celotno besedilo strani, da so ključni podatki zapisani strukturirano in da o vas pišejo tudi drugi viri.",
   },
   {
+    q: "Koliko stane SEO optimizacija za ChatGPT?",
+    a: "Analiza vidnosti v ChatGPT, Gemini, Perplexity in Googlu stane od 290 €. Tehnična ureditev strani stane od 690 €, znesek analize pri tem odštejemo. Mesečno spremljanje z novimi vsebinami stane od 290 € na mesec, brez vezave.",
+  },
+  {
     q: "Ali je to isto kot SEO?",
     a: "Večina dela se prekriva: hitra in pregledna stran, dobri naslovi, jasna vsebina in strukturirani podatki pomagajo pri obojem. Razlika je v tem, da AI iskalniki pogosto berejo stran z lastnimi roboti, ki ne izvajajo JavaScripta, in da odgovor sestavijo iz več virov. Stran je lahko v Googlu na prvem mestu, ChatGPT pa je sploh ne prebere.",
   },
@@ -92,6 +101,10 @@ const faq = [
   {
     q: "Ali potrebujete dostop do moje spletne strani?",
     a: "Za analizo ne, preverimo jo od zunaj. Za ureditev potrebujemo dostop do urejevalnika strani ali sodelovanje z vašim izvajalcem. Če stran vodi nekdo drug in dostopa ne morete deliti, dobite navodila, ki jih izvajalec izvede sam.",
+  },
+  {
+    q: "Ali deluje tudi za WordPress?",
+    a: "Da. Analizo in ureditev izvajamo za WordPress, Wix, Shopify in strani po meri. Na WordPressu uredimo nastavitve vtičnikov Yoast ali Rank Math, robots.txt, llms.txt in strukturirane podatke.",
   },
   {
     q: "Za koga se analiza najbolj splača?",
@@ -159,10 +172,11 @@ export default function AiVidnostPage() {
               <span className="text-text-4">/</span>
               <span className="text-accent">ai-vidnost</span>
             </nav>
-            <h1 className="display text-[13vw] sm:text-[9vw] lg:text-[7vw] xl:text-[120px] text-text leading-[0.9]">
-              Vas ChatGPT
+            <p className="mono-up text-[11px] text-accent mb-5">vas chatgpt sploh pozna?</p>
+            <h1 className="display text-[11vw] sm:text-[8vw] lg:text-[6vw] xl:text-[104px] text-text leading-[0.92]">
+              SEO optimizacija
               <br />
-              <span className="text-accent glow-soft">sploh pozna?</span>
+              <span className="text-accent glow-soft">za ChatGPT in Google.</span>
             </h1>
             <p className="text-[16px] lg:text-[18px] text-text-2 leading-[1.7] max-w-[720px] mt-8">
               Vse več strank namesto Googla vpraša ChatGPT ali Gemini: kje prespati v Piranu,
@@ -242,6 +256,42 @@ export default function AiVidnostPage() {
                   <p className="text-[14px] text-text-2 leading-[1.65] mt-3">{b.d}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* definicija */}
+        <section className="relative py-14 lg:py-20 border-t border-line">
+          <div className="max-w-[1400px] mx-auto px-4 lg:px-8 grid grid-cols-12 gap-x-6 gap-y-8">
+            <div className="col-span-12 lg:col-span-5">
+              <p className="mono-up text-[10px] text-accent mb-6 flex items-center gap-2">
+                <span>&gt;</span>
+                <span>kaj_je_geo</span>
+              </p>
+              <h2 className="display text-[26px] lg:text-[36px] text-text leading-tight">
+                Kaj je GEO optimizacija
+              </h2>
+            </div>
+            <div className="col-span-12 lg:col-span-7 space-y-4 text-[15px] text-text-2 leading-[1.75]">
+              <p>
+                <span className="text-text">GEO optimizacija</span> (generative engine optimization)
+                je urejanje spletne strani in vsebin tako, da jih ChatGPT, Gemini, Perplexity,
+                Claude in Googlov AI pregled najdejo, razumejo in navedejo v odgovorih. Ponekod
+                ji pravijo tudi AEO ali SEO optimizacija za ChatGPT.
+              </p>
+              <p>
+                Temelj je klasični SEO. GEO mu doda tri stvari: dostop za robote AI iskalnikov,
+                podatke o podjetju v strukturirani obliki in vsebine, ki na vprašanja strank
+                odgovorijo že v prvem stavku. Več v članku{" "}
+                <Link href="/blog/seo-optimizacija-za-chatgpt" className="text-accent hover:underline">
+                  SEO optimizacija za ChatGPT
+                </Link>
+                , za klasični SEO pa na strani{" "}
+                <Link href="/storitve/seo-optimizacija" className="text-accent hover:underline">
+                  SEO optimizacija
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </section>

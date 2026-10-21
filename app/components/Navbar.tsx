@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
   { href: "/storitve", label: "storitve", num: "01" },
-  { href: "/cene", label: "cene", num: "02" },
-  { href: "/#proces", label: "proces", num: "03" },
+  { href: "/ai-vidnost", label: "seo in ai", num: "02" },
+  { href: "/cene", label: "cene", num: "03" },
   { href: "/#projekti", label: "delo", num: "04" },
   { href: "/blog", label: "blog", num: "05" },
   { href: "/#kontakt", label: "kontakt", num: "06" },

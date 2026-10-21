@@ -26,9 +26,9 @@ const jetbrainsMono = JetBrains_Mono({
 const SITE_URL = "https://aiprosolutions.si";
 const SITE_NAME = "AI PRO SOLUTIONS";
 const SITE_TITLE =
-  "AI PRO SOLUTIONS: umetna inteligenca in avtomatizacija procesov za podjetja";
+  "AI PRO SOLUTIONS: AI rešitve in avtomatizacija za podjetja";
 const SITE_DESCRIPTION =
-  "Slovensko podjetje za AI rešitve in avtomatizacijo poslovnih procesov: AI chatboti in agenti, avtomatizacija administracije, računovodstva in kadrov, spletne aplikacije. Prva rešitev v produkciji v 2 do 3 tednih, od 1.500 €.";
+  "AI chatboti in agenti, avtomatizacija procesov, spletne aplikacije ter SEO optimizacija za Google in ChatGPT. Slovensko podjetje, prva rešitev v 2 do 3 tednih.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -55,6 +55,9 @@ export const metadata: Metadata = {
     "izdelava spletnih strani",
     "AI svetovanje",
     "AI video za podjetja",
+    "SEO optimizacija",
+    "SEO optimizacija za ChatGPT",
+    "GEO optimizacija",
     "Slovenija",
   ],
   authors: [{ name: "AI PRO SOLUTIONS d.o.o." }],
@@ -123,6 +126,8 @@ const organizationJsonLd = {
     "poslovna inteligenca in analitika",
     "razvoj spletnih strani in aplikacij",
     "GDPR pri uporabi umetne inteligence",
+    "SEO optimizacija",
+    "GEO optimizacija za ChatGPT in AI iskalnike",
   ],
   contactPoint: [
     {
@@ -137,13 +142,22 @@ const organizationJsonLd = {
   makesOffer: [
     {
       "@type": "Offer",
+      name: "Analiza vidnosti v AI iskalnikih in Googlu (SEO in GEO)",
+      url: `${SITE_URL}/ai-vidnost`,
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        minPrice: 290,
+        priceCurrency: "EUR",
+      },
+    },
+    {
+      "@type": "Offer",
       name: "AI chatbot za podporo strankam",
       url: `${SITE_URL}/storitve/ai-chatbot`,
       priceSpecification: {
         "@type": "PriceSpecification",
         minPrice: 1500,
         priceCurrency: "EUR",
-        valueAddedTaxIncluded: false,
       },
     },
     {
@@ -154,7 +168,6 @@ const organizationJsonLd = {
         "@type": "PriceSpecification",
         minPrice: 1500,
         priceCurrency: "EUR",
-        valueAddedTaxIncluded: false,
       },
     },
     {
@@ -165,7 +178,6 @@ const organizationJsonLd = {
         "@type": "PriceSpecification",
         minPrice: 4000,
         priceCurrency: "EUR",
-        valueAddedTaxIncluded: false,
       },
     },
   ],
@@ -217,6 +229,11 @@ const services = [
     name: "IT svetovanje in digitalna transformacija",
     description:
       "Strateško svetovanje za izbiro pravih tehnologij in celovita digitalizacija poslovanja.",
+  },
+  {
+    name: "SEO in GEO optimizacija",
+    description:
+      "SEO optimizacija za Google in optimizacija za AI iskalnike (ChatGPT, Gemini, Perplexity): tehnični pregled, strukturirani podatki, vsebine in mesečne meritve.",
   },
   {
     name: "AI video in avdio produkcija",
