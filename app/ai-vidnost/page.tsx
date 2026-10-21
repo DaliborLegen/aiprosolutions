@@ -316,9 +316,6 @@ export default function AiVidnostPage() {
                 </div>
               ))}
             </div>
-            <p className="mono text-[12px] text-text-4 mt-6">
-              Cene so brez DDV.
-            </p>
           </div>
         </section>
 

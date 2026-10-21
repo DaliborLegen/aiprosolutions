@@ -52,7 +52,7 @@ export function GET() {
 
 ## Izhodiščne cene
 
-Podrobno na [strani s cenami](${SITE_URL}/cene). Vse cene so brez DDV.
+Podrobno na [strani s cenami](${SITE_URL}/cene). Vse cene so v EUR.
 
 ${cenikList}
 

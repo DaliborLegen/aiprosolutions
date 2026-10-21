@@ -57,7 +57,6 @@ export default function CenePage() {
           "@type": "PriceSpecification",
           minPrice: p.od,
           priceCurrency: "EUR",
-          valueAddedTaxIncluded: false,
         },
         ...(p.href ? { url: `${SITE_URL}${p.href}` } : {}),
       })),
@@ -159,7 +158,7 @@ export default function CenePage() {
               ))}
             </div>
             <p className="mono text-[12px] text-text-4 mt-6">
-              Cene so brez DDV. Podjetje je zavezanec za DDV.
+              Vse cene so v EUR.
             </p>
           </div>
         </section>

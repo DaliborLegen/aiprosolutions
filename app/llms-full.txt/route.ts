@@ -31,7 +31,7 @@ Delo poteka pretežno na daljavo, s strankami po vsej Sloveniji in v Evropski un
     parts.push(`### ${f.q}\n\n${f.a}\n`);
   }
 
-  parts.push(`## Cenik (brez DDV)\n`);
+  parts.push(`## Cenik (v EUR)\n`);
   for (const p of cenik) {
     parts.push(
       `### ${p.ime}: od ${eur(p.od)} € na ${p.enota}\n\n${p.opis}\n\nVključeno: ${p.vkljuceno.join("; ")}.\n`
