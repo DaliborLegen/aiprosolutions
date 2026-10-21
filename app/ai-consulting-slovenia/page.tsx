@@ -7,9 +7,9 @@ import Footer from "../sections/Footer";
 
 const SITE_URL = "https://aiprosolutions.si";
 
-const TITLE = "AI Consulting in Slovenia: Conversational AI and Automation";
+const TITLE = "AI Consulting in Slovenia: AI and Automation";
 const DESCRIPTION =
-  "Slovenian AI consultancy building conversational AI, autonomous agents and process automation for companies in Slovenia and the EU. Fixed quotes, first results in 2 to 3 weeks.";
+  "Slovenian AI consultancy: conversational AI, agents and process automation for companies in Slovenia and the EU. Fixed quotes, results in 2 to 3 weeks.";
 
 export const metadata: Metadata = {
   title: TITLE,

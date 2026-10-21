@@ -22,9 +22,9 @@ export const storitveCore: Storitev[] = [
   {
     slug: "umetna-inteligenca-za-podjetja",
     nav: "Umetna inteligenca za podjetja",
-    metaTitle: "Umetna inteligenca za podjetja: uvedba AI rešitev v Sloveniji",
+    metaTitle: "Umetna inteligenca za podjetja v Sloveniji",
     metaDescription:
-      "Uvedba umetne inteligence v slovenska podjetja: AI chatboti, AI agenti, avtomatizacija procesov in svetovanje. Brezplačen posvet, merljivi rezultati v nekaj tednih.",
+      "Uvedba umetne inteligence v slovenska podjetja: AI chatboti, agenti, avtomatizacija procesov in svetovanje. Brezplačen posvet, rezultati v nekaj tednih.",
     h1a: "Umetna inteligenca",
     h1b: "za podjetja.",
     intro:
@@ -99,9 +99,9 @@ export const storitveCore: Storitev[] = [
   {
     slug: "ai-avtomatizacija",
     nav: "AI avtomatizacija",
-    metaTitle: "AI avtomatizacija poslovnih procesov za podjetja",
+    metaTitle: "AI avtomatizacija poslovnih procesov",
     metaDescription:
-      "AI avtomatizacija poslovnih procesov: povezovanje sistemov, avtomatska obdelava dokumentov in delovni tokovi, ki tečejo sami. Za slovenska podjetja, od analize do zagona.",
+      "AI avtomatizacija poslovnih procesov: povezovanje sistemov, obdelava dokumentov in delovni tokovi, ki tečejo sami. Od analize do zagona, od 1.500 €.",
     h1a: "AI avtomatizacija",
     h1b: "procesov.",
     intro:
@@ -176,9 +176,9 @@ export const storitveCore: Storitev[] = [
   {
     slug: "ai-chatbot",
     nav: "AI chatbot",
-    metaTitle: "AI chatbot za podjetja: razvoj chatbotov v slovenščini",
+    metaTitle: "AI chatbot za podjetja v slovenščini",
     metaDescription:
-      "Razvoj AI chatbotov za podporo strankam, prodajo in rezervacije. Tekoča slovenščina, učenje na vaših podatkih, integracija s spletno stranjo in sistemi. Od 1.500 €.",
+      "AI chatbot za podporo strankam, prodajo in rezervacije. Tekoča slovenščina, odgovori iz vaših podatkov, povezava s stranjo in sistemi. Od 1.500 €.",
     h1a: "AI chatbot,",
     h1b: "ki dela zares.",
     intro:
@@ -253,9 +253,9 @@ export const storitveCore: Storitev[] = [
   {
     slug: "ai-agenti",
     nav: "AI agenti",
-    metaTitle: "AI agenti za podjetja: razvoj avtonomnih AI asistentov",
+    metaTitle: "AI agenti za podjetja: razvoj in uvedba",
     metaDescription:
-      "Razvoj AI agentov, ki samostojno opravijo delo: obdelajo dokumente, komunicirajo s strankami in upravljajo procese. Integracije z vašimi sistemi, razvoj v Sloveniji.",
+      "AI agenti, ki samostojno opravijo delo: obdelajo dokumente, komunicirajo s strankami in vodijo procese. Povezava z vašimi sistemi, od 4.000 €.",
     h1a: "AI agenti,",
     h1b: "ki opravijo delo.",
     intro:
@@ -330,9 +330,9 @@ export const storitveCore: Storitev[] = [
   {
     slug: "izdelava-spletnih-strani",
     nav: "Izdelava spletnih strani",
-    metaTitle: "Izdelava spletnih strani in aplikacij: hitro, sodobno, SEO",
+    metaTitle: "Izdelava spletnih strani: hitre in SEO",
     metaDescription:
-      "Izdelava sodobnih spletnih strani in aplikacij v Next.js: hitre, varne in SEO optimizirane. Od predstavitvene strani do kompleksne spletne aplikacije. Slovenija.",
+      "Izdelava spletnih strani v Next.js: hitre, varne, SEO optimizirane in pripravljene za ChatGPT. Predstavitvena stran od 1.500 €, fiksna ponudba.",
     h1a: "Spletne strani,",
     h1b: "ki prodajajo.",
     intro:
@@ -407,7 +407,7 @@ export const storitveCore: Storitev[] = [
   {
     slug: "ai-svetovanje",
     nav: "AI svetovanje",
-    metaTitle: "AI svetovanje: strategija in uvedba umetne inteligence",
+    metaTitle: "AI svetovanje in strategija za podjetja",
     metaDescription:
       "AI svetovanje za podjetja: pregled procesov, izbira pravih AI orodij in načrt uvedbe umetne inteligence. Neodvisno, praktično in brez prodajanja megle.",
     h1a: "AI svetovanje",

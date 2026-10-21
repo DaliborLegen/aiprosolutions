@@ -8,9 +8,9 @@ import { storitve } from "../data/storitve";
 
 const SITE_URL = "https://aiprosolutions.si";
 
-const TITLE = "Storitve: umetna inteligenca, avtomatizacija in razvoj";
+const TITLE = "Storitve: AI, avtomatizacija in razvoj";
 const DESCRIPTION =
-  "Vse storitve AI PRO SOLUTIONS na enem mestu: AI chatboti in agenti, avtomatizacija poslovnih, kadrovskih in računovodskih procesov, spletne aplikacije, poslovna inteligenca in AI video.";
+  "Vse storitve na enem mestu: AI chatboti in agenti, avtomatizacija procesov, spletne strani in aplikacije, SEO in GEO optimizacija, AI video.";
 
 export const metadata: Metadata = {
   title: TITLE,

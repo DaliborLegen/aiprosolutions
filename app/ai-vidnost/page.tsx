@@ -8,7 +8,7 @@ import { aiVidnostPaketi } from "../data/cenik";
 
 const SITE_URL = "https://aiprosolutions.si";
 
-const TITLE = "SEO optimizacija za ChatGPT in GEO optimizacija";
+const TITLE = "SEO optimizacija za ChatGPT (GEO optimizacija)";
 const DESCRIPTION =
   "SEO in GEO optimizacija za ChatGPT, Gemini, Perplexity in Google. Preverimo, ali vas AI iskalniki priporočijo, in uredimo stran. Analiza vidnosti od 290 €.";
 

@@ -10,16 +10,16 @@ import { articles } from "../data/blog";
 const SITE_URL = "https://aiprosolutions.si";
 
 export const metadata: Metadata = {
-  title: "Blog: umetna inteligenca in avtomatizacija za podjetja",
+  title: "Blog o umetni inteligenci in avtomatizaciji",
   description:
-    "Praktični članki o umetni inteligenci, AI chatbotih, avtomatizaciji poslovnih procesov in digitalni transformaciji za slovenska podjetja. Brez žargona, z realnimi številkami.",
+    "Praktični članki o umetni inteligenci, AI chatbotih, avtomatizaciji procesov ter SEO za ChatGPT. Za slovenska podjetja, z realnimi številkami.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
     locale: "sl_SI",
     url: `${SITE_URL}/blog`,
     siteName: "AI PRO SOLUTIONS",
-    title: "Blog: umetna inteligenca in avtomatizacija za podjetja",
+    title: "Blog o umetni inteligenci in avtomatizaciji",
     description:
       "Praktični članki o umetni inteligenci, AI chatbotih in avtomatizaciji za slovenska podjetja.",
   },

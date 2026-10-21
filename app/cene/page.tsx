@@ -8,9 +8,9 @@ import { cenik, cenikFaq } from "../data/cenik";
 
 const SITE_URL = "https://aiprosolutions.si";
 
-const TITLE = "Cenik: koliko stane AI rešitev, avtomatizacija ali aplikacija";
+const TITLE = "Cene: koliko stane AI rešitev za podjetje";
 const DESCRIPTION =
-  "Pregledne izhodiščne cene: AI chatbot in avtomatizacija procesa od 1.500 €, AI agent od 4.000 €, spletna aplikacija od 3.000 €, AI video od 300 €. Fiksna ponudba pred začetkom.";
+  "Izhodiščne cene: AI chatbot in avtomatizacija od 1.500 €, AI agent od 4.000 €, aplikacija od 3.000 €, SEO analiza od 290 €. Fiksna ponudba.";
 
 export const metadata: Metadata = {
   title: TITLE,

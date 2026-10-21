@@ -13,7 +13,7 @@ export const aiVidnostPaketi: CenikPostavka[] = [
   {
     ime: "Analiza vidnosti v AI iskalnikih",
     od: 290,
-    enota: "analiza",
+    enota: "analizo",
     opis:
       "Pisno poročilo o tem, kako vas vidijo ChatGPT, Gemini, Perplexity in Google, s seznamom popravkov po prednosti. Znesek odštejemo od ureditve.",
     vkljuceno: [

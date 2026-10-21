@@ -6,9 +6,9 @@ export const storitve2: Storitev[] = [
   {
     slug: "avtomatizacija-poslovnih-procesov",
     nav: "Avtomatizacija poslovnih procesov",
-    metaTitle: "Avtomatizacija poslovnih procesov: kje začeti in koliko stane",
+    metaTitle: "Avtomatizacija poslovnih procesov: cena",
     metaDescription:
-      "Avtomatizacija procesov v podjetju: povezovanje sistemov, odprava ročnih vnosov in avtomatizirani delovni tokovi. Prvi proces v produkciji v 2 do 3 tednih, od 1.500 €.",
+      "Avtomatizacija procesov v podjetju: povezovanje sistemov, odprava ročnih vnosov, delovni tokovi. Prvi proces v produkciji v 2 do 3 tednih, od 1.500 €.",
     h1a: "Avtomatizacija",
     h1b: "poslovnih procesov.",
     intro:
@@ -97,7 +97,7 @@ export const storitve2: Storitev[] = [
   {
     slug: "avtomatizacija-kadrovskih-procesov",
     nav: "Avtomatizacija kadrovskih procesov",
-    metaTitle: "Avtomatizacija kadrovskih procesov in zaposlovanja",
+    metaTitle: "Avtomatizacija kadrovskih procesov",
     metaDescription:
       "Program za avtomatizacijo procesa zaposlovanja in kadrovske administracije: obdelava prijav, razvrščanje kandidatov, uvajanje in odhod zaposlenih. Od 1.500 €.",
     h1a: "Avtomatizacija",
@@ -175,7 +175,7 @@ export const storitve2: Storitev[] = [
   {
     slug: "avtomatizacija-racunovodstva",
     nav: "Avtomatizacija računovodstva in dokumentov",
-    metaTitle: "Avtomatizirano računovodstvo in AI obdelava dokumentov",
+    metaTitle: "Avtomatizacija računovodstva z AI",
     metaDescription:
       "Računovodska avtomatizacija z umetno inteligenco: samodejno branje prejetih računov, pogodb in dokumentov, predlog kontiranja in vpis v ERP. Od 1.500 €.",
     h1a: "Avtomatizirano",
@@ -265,9 +265,9 @@ export const storitve2: Storitev[] = [
   {
     slug: "izdelava-spletnih-aplikacij",
     nav: "Izdelava spletnih aplikacij",
-    metaTitle: "Izdelava spletnih aplikacij po meri: od zamisli do produkcije",
+    metaTitle: "Izdelava spletnih aplikacij po meri",
     metaDescription:
-      "Izdelava spletnih aplikacij in internih orodij po meri v Next.js in TypeScript: portali, nadzorne plošče, rezervacijski sistemi, API povezave. Prva različica v 4 do 8 tednih.",
+      "Spletne aplikacije in interna orodja po meri: portali, nadzorne plošče, rezervacijski sistemi, API povezave. Prva različica v 4 do 8 tednih, od 3.000 €.",
     h1a: "Izdelava",
     h1b: "spletnih aplikacij.",
     intro:
@@ -354,7 +354,7 @@ export const storitve2: Storitev[] = [
   {
     slug: "poslovna-inteligenca",
     nav: "Poslovna inteligenca in analitika",
-    metaTitle: "Poslovna inteligenca: rešitve za analitiko in poročanje",
+    metaTitle: "Poslovna inteligenca: analitika in poročila",
     metaDescription:
       "Rešitve za poslovno inteligenco in analitiko: združevanje podatkov iz ERP, CRM in spletne trgovine, nadzorne plošče in samodejna poročila z AI povzetki.",
     h1a: "Poslovna",
@@ -433,9 +433,9 @@ export const storitve2: Storitev[] = [
   {
     slug: "interni-ai-asistent",
     nav: "Interni AI asistent",
-    metaTitle: "Interni chatbot in AI pomočnik za zaposlene v slovenščini",
+    metaTitle: "Interni chatbot in AI asistent za zaposlene",
     metaDescription:
-      "Interni AI asistent, ki odgovarja na vprašanja zaposlenih iz vaših pravilnikov, navodil in cenikov. Slovenski chatbot z navedbo vira, brez izmišljenih odgovorov.",
+      "Interni AI asistent odgovarja zaposlenim iz vaših pravilnikov, navodil in cenikov. Slovenski chatbot z navedbo vira, brez izmišljenih odgovorov.",
     h1a: "Interni",
     h1b: "AI asistent.",
     intro:
@@ -522,9 +522,9 @@ export const storitve2: Storitev[] = [
   {
     slug: "ai-video-produkcija",
     nav: "AI video produkcija",
-    metaTitle: "AI video za podjetja: izdelava videov z umetno inteligenco",
+    metaTitle: "AI video za podjetja: izdelava in cena",
     metaDescription:
-      "Izdelava AI videov za podjetja v Sloveniji: oglasi, predstavitve izdelkov, vsebine za družbena omrežja in zaslone. Brez snemalne ekipe, prvi osnutek v nekaj dneh.",
+      "AI video za podjetja: oglasi, predstavitve izdelkov, vsebine za družbena omrežja in zaslone. Brez snemalne ekipe, prvi osnutek v nekaj dneh, od 300 €.",
     h1a: "AI video",
     h1b: "produkcija.",
     intro:
@@ -604,9 +604,9 @@ export const storitve2: Storitev[] = [
   {
     slug: "seo-optimizacija",
     nav: "SEO optimizacija",
-    metaTitle: "SEO optimizacija spletnih strani: cena in kaj vključuje",
+    metaTitle: "SEO optimizacija spletnih strani: cena",
     metaDescription:
-      "SEO optimizacija spletne strani za Google in AI iskalnike (ChatGPT, Gemini): tehnični pregled, naslovi, strukturirani podatki, vsebine. Analiza od 290 €, ureditev od 690 €.",
+      "SEO optimizacija spletne strani za Google in ChatGPT: tehnični pregled, naslovi, strukturirani podatki, vsebine. Analiza od 290 €, ureditev od 690 €.",
     h1a: "SEO optimizacija",
     h1b: "za Google in ChatGPT.",
     intro:

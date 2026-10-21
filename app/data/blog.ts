@@ -27,9 +27,9 @@ export const articles: Article[] = [
   {
     slug: "seo-optimizacija-za-chatgpt",
     title: "SEO optimizacija za ChatGPT: kako priti v odgovore AI iskalnikov",
-    metaTitle: "SEO optimizacija za ChatGPT: vodnik za GEO optimizacijo 2026",
+    metaTitle: "SEO optimizacija za ChatGPT: vodnik 2026",
     metaDescription:
-      "Kako doseči, da vas ChatGPT, Gemini in Perplexity omenijo: kaj je GEO optimizacija, zakaj AI roboti pogosto ne vidijo strani, robots.txt, llms.txt, strukturirani podatki.",
+      "Kako priti v odgovore ChatGPT, Gemini in Perplexity: kaj je GEO optimizacija, zakaj AI roboti ne vidijo strani in 7 korakov do vidnosti.",
     excerpt:
       "Kaj je GEO optimizacija, zakaj ChatGPT vaše strani morda sploh ne prebere in sedem korakov, s katerimi podjetje pride v odgovore AI iskalnikov.",
     date: "2026-10-21",
@@ -131,7 +131,7 @@ export const articles: Article[] = [
     title: "Koliko stane AI chatbot za podjetje leta 2026?",
     metaTitle: "Koliko stane AI chatbot za podjetje? Cene 2026",
     metaDescription:
-      "Koliko stane AI chatbot za podjetje: razpon cen izdelave, mesečni stroški delovanja, kaj vpliva na ceno in kdaj se naložba povrne. Konkretne številke za slovenska podjetja.",
+      "Koliko stane AI chatbot za podjetje: cena izdelave, mesečni stroški delovanja, kaj vpliva na ceno in kdaj se naložba povrne. Številke za slovenski trg.",
     excerpt:
       "Razpon cen, mesečni stroški delovanja in glavni dejavniki, ki določajo, koliko boste plačali za chatbota, ki dejansko dela.",
     date: "2026-07-24",
@@ -252,9 +252,9 @@ export const articles: Article[] = [
   {
     slug: "ai-avtomatizacija-primeri",
     title: "AI avtomatizacija poslovnih procesov: 8 primerov, ki se splačajo",
-    metaTitle: "AI avtomatizacija: 8 primerov za podjetja, ki se splačajo",
+    metaTitle: "AI avtomatizacija: 8 primerov za podjetja",
     metaDescription:
-      "8 konkretnih primerov AI avtomatizacije poslovnih procesov: obdelava računov, e-pošta, ponudbe, naročila in poročila. Kateri procesi se splača avtomatizirati in koliko prihranite.",
+      "8 primerov AI avtomatizacije poslovnih procesov: računi, e-pošta, ponudbe, naročila in poročila. Kateri procesi se splačajo in koliko prihranite.",
     excerpt:
       "Osem konkretnih procesov, ki jih slovenska podjetja najpogosteje avtomatizirajo, in kako oceniti, kateri se najbolj splača začeti.",
     date: "2026-07-25",
@@ -368,7 +368,7 @@ export const articles: Article[] = [
   {
     slug: "umetna-inteligenca-za-mala-podjetja",
     title: "Umetna inteligenca za mala in srednja podjetja: vodnik za začetek",
-    metaTitle: "Umetna inteligenca za mala podjetja: praktičen vodnik",
+    metaTitle: "Umetna inteligenca za mala podjetja: vodnik",
     metaDescription:
       "Praktičen vodnik, kako mala in srednja podjetja uvedejo umetno inteligenco: kje začeti, katere napake se izogniti in prvi koraki. Brez tehničnega žargona.",
     excerpt:
@@ -494,7 +494,7 @@ export const articles: Article[] = [
     title: "GDPR in umetna inteligenca: kaj mora vedeti podjetje",
     metaTitle: "GDPR in umetna inteligenca: vodnik za podjetja",
     metaDescription:
-      "Kako uskladiti umetno inteligenco z GDPR: vloge upravljavca in obdelovalca, pravna podlaga, minimizacija podatkov, prenos v ZDA (DPA in SCC) ter praktični koraki za podjetja.",
+      "Umetna inteligenca in GDPR: upravljavec in obdelovalec, pravna podlaga, minimizacija podatkov, prenos v ZDA (DPA, SCC) in praktični koraki.",
     excerpt:
       "GDPR ne prepoveduje umetne inteligence, zahteva pa, da veste, kaj se dogaja z osebnimi podatki. Praktičen pregled vlog, obveznosti in konkretnih korakov.",
     date: "2026-07-27",
