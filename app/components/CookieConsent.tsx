@@ -21,6 +21,13 @@ function loadGa(id: string) {
   s.async = true;
   s.src = `https://www.googletagmanager.com/gtag/js?id=${id}`;
   document.head.appendChild(s);
+  // kliki na e-posto in telefon kot dogodka (za konverzije v Google Ads prek GA4)
+  document.addEventListener("click", (e) => {
+    const a = (e.target as HTMLElement).closest?.("a[href^='mailto:'], a[href^='tel:']");
+    if (!a) return;
+    const tel = a.getAttribute("href")!.startsWith("tel:");
+    w.gtag("event", tel ? "klik_telefon" : "klik_email", { page_path: location.pathname });
+  });
 }
 
 export default function CookieConsent() {

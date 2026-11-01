@@ -20,6 +20,8 @@ export default function Contact() {
       });
       if (!res.ok) throw new Error();
       setStatus("sent");
+      // oddano povprasevanje = glavna konverzija (GA4 -> Google Ads); gtag obstaja le ob soglasju
+      (window as unknown as { gtag?: (...a: unknown[]) => void }).gtag?.("event", "generate_lead", { form: "kontakt" });
       setForm({ name: "", company: "", email: "", message: "" });
     } catch {
       setStatus("error");
