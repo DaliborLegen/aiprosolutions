@@ -1,11 +1,18 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Reveal from "../components/Reveal";
 import Magnetic from "../components/Magnetic";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", company: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  // zascita pred roboti: past polje (ljudem skrito) + cas od nalozitve obrazca
+  const [potrditev, setPotrditev] = useState("");
+  const nalozeno = useRef(0);
+  useEffect(() => {
+    nalozeno.current = Date.now();
+  }, []);
 
   const update = (key: string, val: string) => setForm((f) => ({ ...f, [key]: val }));
 
