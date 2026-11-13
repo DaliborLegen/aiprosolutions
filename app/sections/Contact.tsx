@@ -23,7 +23,7 @@ export default function Contact() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, potrditev, t: Date.now() - nalozeno.current }),
       });
       if (!res.ok) throw new Error();
       setStatus("sent");
@@ -142,6 +142,20 @@ export default function Contact() {
                     <span className="dot-signal" />
                     <span className="hidden sm:inline">ready</span>
                   </span>
+                </div>
+                <div aria-hidden className="absolute -left-[9999px] top-0 h-px w-px overflow-hidden">
+                  <label>
+                    Tega polja ne izpolnjujte
+                    <input
+                      type="text"
+                      name="potrditev"
+                      value={potrditev}
+                      onChange={(e) => setPotrditev(e.target.value)}
+                      tabIndex={-1}
+                      autoComplete="off"
+                      suppressHydrationWarning
+                    />
+                  </label>
                 </div>
                 <div className="grid grid-cols-12 gap-x-6 gap-y-9">
                   <div className="col-span-12 sm:col-span-6">
